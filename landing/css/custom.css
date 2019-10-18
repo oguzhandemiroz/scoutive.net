@@ -1,0 +1,43 @@
+#scoutiveLogo {
+	width: 130px;
+}
+
+a.side_bar_support {
+	font-size: inherit !important;
+	color: initial !important;
+	font-weight: inherit !important;
+}
+
+.navbar-brand {
+	padding-bottom: inherit;
+}
+
+.demo_request_btn {
+	margin-top: 6.5rem;
+	font: 500 14px "Poppins", sans-serif;
+	color: #fff;
+	background: #467fcf;
+	-webkit-box-shadow: 0px 20px 30px 0px rgba(45, 93, 237, 0.1);
+	box-shadow: 0px 20px 30px 0px rgba(45, 93, 237, 0.1);
+	border-radius: 3px;
+	padding: 16px 38px;
+	border: 1px solid #467fcf;
+	-webkit-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	cursor: pointer;
+}
+
+.demo_request_btn:hover {
+	color: #467fcf;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background: transparent;
+}
+
+a {
+	color: #467fcf;
+}
+a:hover {
+	color: #295a9f;
+}
