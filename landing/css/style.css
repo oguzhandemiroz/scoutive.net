@@ -5655,7 +5655,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  margin-top: -22px;
+  margin-top: -35px;
+  width: 70px;
 }
 
 .software_featured_item h3 {
