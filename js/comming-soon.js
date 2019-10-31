@@ -38,7 +38,7 @@
         updateClock();
         var timeinterval = setInterval(updateClock, 1000);
     }
-    var deadline = new Date("2019-10-31")
+    var deadline = new Date("2019-11-07")
     initializeClock('clockdiv', deadline);
     //# sourceURL=pen.js
 })(jQuery)
