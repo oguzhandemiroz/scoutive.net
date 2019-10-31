@@ -41,3 +41,39 @@ a {
 a:hover {
 	color: #295a9f;
 }
+
+.seo_features_img .round_circle {
+	position: absolute;
+	width: 540px;
+	height: 540px;
+	border-radius: 50%;
+	background: #467fcf;
+	right: -126px;
+	z-index: -1;
+	opacity: 0.06;
+}
+
+.seo_features_img .round_circle.two {
+	width: 360px;
+	height: 360px;
+	left: 84px;
+	right: auto;
+	top: 74px;
+	z-index: -2;
+}
+
+.seo_features_content .seo_features_item .icon {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: #5eba00;
+	text-align: center;
+	line-height: 70px;
+	margin-right: 30px;
+	font-size: 1.75rem;
+	color: #fff;
+}
+
+.seo_features_content .seo_features_item .icon.two {
+	background: #467fcf;
+}
