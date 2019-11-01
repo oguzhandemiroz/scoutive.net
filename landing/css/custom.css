@@ -77,3 +77,29 @@ a:hover {
 .seo_features_content .seo_features_item .icon.two {
 	background: #467fcf;
 }
+
+.prototype_banner_area {
+	background: #fbfbfd;
+	padding-top: 100px;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.partner_logo {
+	justify-content: center;
+}
+
+.partner_logo .p_logo_item img {
+	max-width: 100%;
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.partner_logo .p_logo_item:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
