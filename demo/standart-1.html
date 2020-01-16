@@ -1,27 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="https://www.scoutive.net/landing/img/favicon.ico" type="image/x-icon" />
     <!-- SEO Meta Tags -->
     <meta name="description"
         content="Spor okulları için kayıt bilgi düzenlenmesi, yoklama, muhasebe, antrenman, veli takip sistemi ve bireysel sporcu analizi gibi birçok özelliği bir araya getiren platformdur. Bu platform raporlama ve analiz imkânı sunar ve senkronize çalışmayı destekler. Ortak ağ bağlantısı ile veli, öğrenci ve okul arasındaki ilişkilerde köprü olur.">
-    <meta name="author" content="Inovatik">
-
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-    <meta property="og:site_name" content="" /> <!-- website name -->
-    <meta property="og:site" content="" /> <!-- website link -->
-    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-    <meta property="og:type" content="article" />
-
+    <meta name="author" content="Scoutive">
     <!-- Website Title -->
     <title>Scoutive | Standart Template</title>
-
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext"
         rel="stylesheet">
@@ -30,9 +18,188 @@
     <link href="css/swiper.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-
     <!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="https://www.scoutive.net/landing/img/favicon.ico" type="image/x-icon" />
+    <!-- Scripts-->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <style>
+        .permission {
+            color: #cd201f;
+            transition: all 0.2s;
+        }
+
+        .onkayit {
+            font-size: 1.25rem !important;
+            font-family: sans-serif;
+        }
+
+
+        .form-required {
+            color: #cd201f;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .form-required:before {
+            content: ' ';
+        }
+
+        .whatsapp_button {
+            font-size: 1.25rem !important;
+            font-family: sans-serif;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .02em;
+            padding: 10px 17px;
+            white-space: nowrap;
+            text-decoration: none;
+            border-radius: 2rem;
+            color: #fff;
+            background-color: #2AB640;
+            border: 0.125rem solid #2AB640;
+            transition: all 0.2s;
+            margin-bottom: 15px;
+        }
+
+        .whatsapp_button:hover {
+            background-color: #fff;
+            color: #2AB640;
+            text-decoration: none;
+        }
+
+        .adressLink {
+            text-decoration: none;
+            color: #00bfd8;
+            transition: all 0.2s;
+        }
+
+        .adressLink:hover {
+            text-decoration: none;
+            color: #32e7ff;
+        }
+
+        input,
+        button,
+        select,
+        optgroup,
+        textarea {
+            font-family: sans-serif;
+        }
+
+        .btn:focus,
+        .btn:active,
+        button:focus,
+        button:active {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        #image-gallery .modal-footer {
+            display: block;
+        }
+
+        .thumb {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+    <script>
+        let modalId = $('#image-gallery');
+
+        $(document)
+            .ready(function () {
+
+                loadGallery(true, 'a.thumbnail');
+
+                //This function disables buttons when needed
+                function disableButtons(counter_max, counter_current) {
+                    $('#show-previous-image, #show-next-image')
+                        .show();
+                    if (counter_max === counter_current) {
+                        $('#show-next-image')
+                            .hide();
+                    } else if (counter_current === 1) {
+                        $('#show-previous-image')
+                            .hide();
+                    }
+                }
+
+                /**
+                 *
+                 * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+                 * @param setClickAttr  Sets the attribute for the click handler.
+                 */
+
+                function loadGallery(setIDs, setClickAttr) {
+                    let current_image,
+                        selector,
+                        counter = 0;
+
+                    $('#show-next-image, #show-previous-image')
+                        .click(function () {
+                            if ($(this)
+                                .attr('id') === 'show-previous-image') {
+                                current_image--;
+                            } else {
+                                current_image++;
+                            }
+
+                            selector = $('[data-image-id="' + current_image + '"]');
+                            updateGallery(selector);
+                        });
+
+                    function updateGallery(selector) {
+                        let $sel = selector;
+                        current_image = $sel.data('image-id');
+                        $('#image-gallery-title')
+                            .text($sel.data('title'));
+                        $('#image-gallery-image')
+                            .attr('src', $sel.data('image'));
+                        disableButtons(counter, $sel.data('image-id'));
+                    }
+
+                    if (setIDs == true) {
+                        $('[data-image-id]')
+                            .each(function () {
+                                counter++;
+                                $(this)
+                                    .attr('data-image-id', counter);
+                            });
+                    }
+                    $(setClickAttr)
+                        .on('click', function () {
+                            updateGallery($(this));
+                        });
+                }
+            });
+
+        // build key actions
+        $(document)
+            .keydown(function (e) {
+                switch (e.which) {
+                    case 37: // left
+                        if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+                            $('#show-previous-image')
+                                .click();
+                        }
+                        break;
+
+                    case 39: // right
+                        if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+                            $('#show-next-image')
+                                .click();
+                        }
+                        break;
+
+                    default:
+                        return; // exit this handler for other keys
+                }
+                e.preventDefault(); // prevent the default action (scroll / move caret)
+            });
+
+    </script>
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -74,14 +241,16 @@
                     <a class="nav-link page-scroll" href="#services">Hizmetlerimiz</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#pricing">Ücretler</a>
+                    <a class="nav-link page-scroll" href="#pricing">Şubeler</a>
                 </li>
-                <!-- Dropdown Menu -->
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#about">Akademik Kadro
                     </a>
                 </li>
-                <!-- end of dropdown menu -->
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#gallery">Galeri
+                    </a>
+                </li>
 
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#contact">İletişim</a>
@@ -89,19 +258,19 @@
             </ul>
             <span class="nav-item social-icons">
                 <span class="fa-stack">
-                    <a href="#your-link">
+                    <a href="https://www.facebook.com/facebookappTurkiye">
                         <i class="fas fa-circle fa-stack-2x facebook"></i>
                         <i class="fab fa-facebook-f fa-stack-1x"></i>
                     </a>
                 </span>
                 <span class="fa-stack">
-                    <a href="#your-link">
+                    <a href="https://twitter.com/twitter">
                         <i class="fas fa-circle fa-stack-2x twitter"></i>
                         <i class="fab fa-twitter fa-stack-1x"></i>
                     </a>
                 </span>
                 <span class="fa-stack">
-                    <a href="#your-link">
+                    <a href="https://www.instagram.com/instagram/">
                         <i class="fas fa-circle fa-stack-2x instagram"></i>
                         <i class="fab fa-instagram fa-stack-1x"></i>
                     </a>
@@ -127,7 +296,8 @@
                                 çalışmayı destekler.
 
                                 Ortak ağ bağlantısı ile veli, öğrenci ve okul arasındaki ilişkilerde köprü olur.</p>
-                            <a class="btn-solid-lg page-scroll" href="#services">Ön Kayıt</a>
+                            <a class="btn-solid-reg popup-with-move-anim onkayit" href=" #onkayitformu">Ön
+                                Kayıt</a>
                         </div> <!-- end of text-container -->
                     </div> <!-- end of col -->
                     <div class="col-lg-6">
@@ -142,106 +312,69 @@
     <!-- end of header -->
 
 
-    <!-- Customers -->
-    <div class="slider-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h5>Referanslarımız</h5>
-
-                    <!-- Image Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container image-slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="image-container">
-                                        <img class="img-responsive" src="images/customer-logo-1.png" alt="alternative">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image-container">
-                                        <img class="img-responsive" src="images/customer-logo-2.png" alt="alternative">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image-container">
-                                        <img class="img-responsive" src="images/customer-logo-3.png" alt="alternative">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image-container">
-                                        <img class="img-responsive" src="images/customer-logo-4.png" alt="alternative">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image-container">
-                                        <img class="img-responsive" src="images/customer-logo-5.png" alt="alternative">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image-container">
-                                        <img class="img-responsive" src="images/customer-logo-6.png" alt="alternative">
-                                    </div>
-                                </div>
-                            </div> <!-- end of swiper-wrapper -->
-                        </div> <!-- end of swiper container -->
-                    </div> <!-- end of slider-container -->
-                    <!-- end of image slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-1 -->
-    <!-- end of customers -->
-
 
     <!-- Services -->
     <div id="services" class="cards-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Hizmetlerimiz</h2>
-                    <p class="p-heading p-large">We serve small and medium sized companies in all tech related
-                        industries with high quality growth services which are presented below</p>
+                    <h2>Neler Yapıyoruz?</h2>
+                    <p class="p-heading p-large">Hedefinize özel olarak hazırlanmış kurslarımız verimli çalışma sunmaya
+                        hazır.</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Card -->
-                    <div class="card">
-                        <img class="card-image" src="images/services-icon-1.svg" alt="alternative">
-                        <div class="card-body">
-                            <h4 class="card-title">Market Analysis</h4>
-                            <p>Our team of enthusiastic marketers will analyse and evaluate how your company stacks
-                                against the closest competitors</p>
-                        </div>
+                <!-- Card -->
+                <div class="col-lg-3">
+                    <img class="card-image" src="images/services-icon-1.svg" alt="alternative">
+                    <div class="card-body">
+                        <h4 class="card-title">Spor Akedemilerine Hazırlık</h4>
+                        <p> Beden Eğitimi ve Spor alanında ilerlemek isteyen öğrencileri üniversitelerin özel yetek
+                            sınavlarına hazırlamak amaçlı çalışan kurslardır.
+                            Spor akademileri sayesinde sporun teknik detaylarını öğrenerek kendi yeteneğini geliştiren
+                            öğrenciler spor alanında istedikleri mesleğe (beden eğitimi öğretmeni, antrenör, spor
+                            yöneticisi, spor uzmanı) ulaşabilirler.</p>
                     </div>
-                    <!-- end of card -->
+                </div>
+                <!-- end of card -->
 
-                    <!-- Card -->
-                    <div class="card">
-                        <img class="card-image" src="images/services-icon-2.svg" alt="alternative">
-                        <div class="card-body">
-                            <h4 class="card-title">Opportunity Scan</h4>
-                            <p>Once the market analysis process is completed our staff will search for opportunities
-                                that are in reach</p>
-                        </div>
+                <!-- Card -->
+                <div class="col-lg-3">
+                    <img class="card-image" src="images/services-icon-2.svg" alt="alternative">
+                    <div class="card-body">
+                        <h4 class="card-title">Polis Meslek Eğitim Merkezleri (POMEM)</h4>
+                        <p>POMEM, Emniyet Teşkilatının ihtiyacı olan polis memurlarını yetiştirmek üzere meslek eğitimi
+                            veren eğitim öğretim kurumlarıdır. 4 yıllık fakülte mezunlarından aranılan niteliklere sahip
+                            olanlara yapılan sınavlarda başarılı olan adaylara, 6 aydan az olmamak üzere eğitim verilir.
+                        </p>
                     </div>
-                    <!-- end of card -->
+                </div>
+                <!-- end of card -->
 
-                    <!-- Card -->
-                    <div class="card">
-                        <img class="card-image" src="images/services-icon-3.svg" alt="alternative">
-                        <div class="card-body">
-                            <h4 class="card-title">Action Plan</h4>
-                            <p>With all the information in place you will be presented with an action plan that your
-                                company needs to follow</p>
-                        </div>
+                <!-- Card -->
+                <div class="col-lg-3">
+                    <img class="card-image" src="images/services-icon-3.svg" alt="alternative">
+                    <div class="card-body">
+                        <h4 class="card-title">Polis Meslek Yüksek Okulu Hazırlık Kursu (PMYO)</h4>
+                        <p>Emniyet Genel Müdürlüğü Polis Akademisi bünyesinde faaliyetlerini sürdüren Polis Meslek
+                            Yüksekokulları(PMYO), 2 Yıllık Önlisans düzeyinde, Çok Dilli ve Çok uluslu olarak( Erasmus
+                            ve Farabi Öğrenci değişim Programlarıyla) Eğitim-Öğretim Yapmaktadır.</p>
                     </div>
-                    <!-- end of card -->
+                </div>
+                <!-- end of card -->
 
-                </div> <!-- end of col -->
+                <!-- Card -->
+                <div class="col-lg-3">
+                    <img class="card-image" src="images/services-icon-3.svg" alt="alternative">
+                    <div class="card-body">
+                        <h4 class="card-title">Polis Özel Harekat Kursu (PÖH)</h4>
+                        <p>Polis Özel Harekat Dairesi Başkanlığı, Polis Özel Harekat ya da bilinen kısa adıyla PÖH,
+                            Emniyet Genel Müdürlüğü'nün; banka soygunu ve terör eylemlerine müdahale, rehine kurtarma
+                            gibi olağanüstü durumlar ve baskınlar için özel taktik ve silahlar kullanan bir özel harekat
+                            birimidir.</p>
+                    </div>
+                </div>
+                <!-- end of card -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of cards-1 -->
@@ -254,15 +387,20 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Design And Plan Your Business Growth Steps</h2>
-                        <p>Use our staff and our expertise to design and plan your business growth strategy. Evolo team
-                            is eager to advise you on the best opportunities that you should look into</p>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">LIGHTBOX</a>
+                        <h2>Başarının Anahtarı</h2>
+                        <p>Kursumuza yeni kayıt olmuş bir öğrencimiz ilk olarak TANITA BC-418 profesyonel ölçüm cihazı
+                            ile boy, kilo, yaş bilgilerini aldıktan sonra vücuttaki yağ oranı, sıvı oranı, kas oranı,
+                            bacak kas kuvvetleri, kol kas kuvvetleri ve bacak kuvvet oranlarını tespit ediyoruz.</p>
+                        <p><b>Çalışmalarımızın Başlangıç Tarihleri;</b><br>
+                            Öğrencilerimizi kış ve yaz grubu olmak üzere 2 grupta hazırlıyoruz. Kış grubumuz liselerin
+                            son sınıflarında okuyan ve mezun olmuş öğrencilerden oluşmakta ve Ocak ayından itibaren
+                            YGS’nin yapıldığı 27 Mart tarihine kadar hafta içi okul ya da dershanelerine devam etmekte
+                            hafta sonları ise antrenmanlarımıza katılmaktadır.</p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/details-1-office-worker.svg" alt="alternative">
+                        <img class="img-fluid" src="images/services-icon-4.svg" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -282,138 +420,174 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Program / Takvim</h2>
+                        <h2>Ayrıcalıklarımız</h2>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-check"></i>
-                                <div class="media-body">Basically we'll teach you step by step what you need to do</div>
+                                <div class="media-body">TANITA BC-418 profesyonel vücut ölçüm cihazı ile vücuttaki
+                                    çeşitli oranların tespit edilip, gruplara özel antrenman programları,</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-check"></i>
-                                <div class="media-body">In order to develop your company and reach new heights</div>
+                                <div class="media-body">Kendi branşlarında uzman 10 farklı branşta (futbol, basketbol,
+                                    atletizm, voleybol, hentbol, masa tenisi, karate, badminton, yüzme, koordinasyon)
+                                    hizmet veren 25 kişilik eğitimci kadrosu,
+                                </div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-check"></i>
-                                <div class="media-body">Everyone will be pleased from stakeholders to employees</div>
+                                <div class="media-body">Kayıt olacak öğrenci sayısına göre antrenör dengesi
+                                    oluşturulması,</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body">Öğrenci sayı ve seviyesine göre 2-3-4 farklı gruplar halinde
+                                    çalışma imkânı(100 kişilik bir grubu 25 kişilik eşit gruplar seviyesinde çalıştırma)
+                                </div>
                             </li>
                         </ul>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-2 -->
     <!-- end of details 2 -->
-
-    <!-- Details Lightboxes -->
-    <!-- Details Lightbox 1 -->
-    <div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+    <!-- Details Lightbox 3 -->
+    <div id="onkayitformu" class="lightbox-basic zoom-anim-dialog mfp-hide pb-4">
         <div class="container">
             <div class="row">
                 <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
                 <div class="col-lg-8">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/details-lightbox-1.svg" alt="alternative">
+                        <div>
+
+                            <div class="row">
+                                <div class="form-group col-lg-6">
+                                    <label class="form-label">Öğrenci Adı<span class="form-required">*</span></label>
+                                    <input type="text" class="form-control" id="ogrenci_adi">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label class="form-label">Öğrenci Soyadı<span class="form-required">*</span></label>
+                                    <input type="text" class="form-control" id="ogrenci_soyadi">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-6">
+                                    <label class="form-label">Doğum Tarihi<span class="form-required">*</span></label>
+                                    <input type="text" name="field-name" class="form-control" data-mask="00/00/1900"
+                                        data-mask-clearifnotmatch="true" autocomplete="off" maxlength="10"
+                                        id="ogrenci_dogum_tarih">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <div class="form-label">Cinsiyet</div>
+                                    <div class="custom-controls-stacked">
+                                        <label class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="ogrenci_cinsiyet"
+                                                value="0">
+                                            <span class="custom-control-label">Erkek</span>
+                                        </label>
+                                        <label class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="ogrenci_cinsiyet"
+                                                value="1">
+                                            <span class="custom-control-label">Kız</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-6">
+                                    <label class="form-label">Telefon Numarası<span
+                                            class="form-required">*</span></label>
+                                    <input type="text" id="ogrenci_telefon" class="form-control"
+                                        data-mask="(500) 000 00 00" data-mask-clearifnotmatch="true" autocomplete="off"
+                                        maxlength="9">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label class="form-label">Email</label>
+                                    <input class="form-control" id="ogrenci_email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-6">
+                                    <label class="form-label">Lokasyon</label>
+                                    <select class="form-control custom-select" id="lokasyon">
+                                        <option value="istanbul-avrupa">İstanbul Avrupa</option>
+                                        <option value="istanbul-anadolu">İstanbul Anadolu
+                                        </option>
+
+                                    </select>
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label class="form-label">Bölüm</label>
+                                    <select class="form-control custom-select" id="bolum">
+                                        <option value="Besyo">Besyo Hazırlık</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-6">
+                                    <label class="form-label">Veli Adı<span class="form-required">*</span></label>
+                                    <input type="text" class="form-control" id="veli_adi">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label class="form-label">Veli Soyadı<span class="form-required">*</span></label>
+                                    <input type="text" class="form-control" id="veli_soyadi">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label class="form-label">Telefon Numarası<span
+                                            class="form-required">*</span></label>
+                                    <input type="text" class="form-control" id="veli_telefon"
+                                        data-mask="(500) 000 00 00" data-mask-clearifnotmatch="true" autocomplete="off"
+                                        maxlength="9">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label class="form-label">Email</label>
+                                    <input class="form-control" id="veli_email">
+                                </div>
+                            </div>
+                        </div>
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
-                    <h3>Design And Plan</h3>
+                    <h3>Scoutive Spor Okulları</h3>
                     <hr>
-                    <h5>Core feature</h5>
-                    <p>The emailing module basically will speed up your email marketing operations while offering more
-                        subscriber control.</p>
-                    <p>Do you need to build lists for your email campaigns? It just got easier with Evolo.</p>
+                    <h5>Öğrenci Kayıt Formu</h5>
+                    <p>Spor okulları için kayıt bilgi düzenlenmesi, yoklama, muhasebe, antrenman, veli takip sistemi ve
+                        bireysel sporcu analizi gibi birçok özelliği bir araya getiren platformdur.</p>
                     <ul class="list-unstyled li-space-lg">
                         <li class="media">
                             <i class="fas fa-check"></i>
-                            <div class="media-body">List building framework</div>
-                        </li>
+                            <div class="media-body">Kendi branşlarında uzman 10 farklı branşta (futbol, basketbol,
+                                atletizm, voleybol, hentbol, masa tenisi, karate, badminton, yüzme, koordinasyon) hizmet
+                                veren 25 kişilik eğitimci kadrosu</div>
                         <li class="media">
-                            <i class="fas fa-check"></i>
-                            <div class="media-body">Easy database browsing</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-check"></i>
-                            <div class="media-body">User administration</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-check"></i>
-                            <div class="media-body">Automate user signup</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-check"></i>
-                            <div class="media-body">Quick formatting tools</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-check"></i>
-                            <div class="media-body">Fast email checking</div>
+                            <div>
+                                <label class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="permission"
+                                        name="example-inline-checkbox1" value="izin">
+                                    <span class="custom-control-label permission">Formdaki bilgiler dahilinde
+                                        gerektiğinde veliyle ve öğrenciyle iletişime geçilmesini kabul ediyor ve
+                                        onaylıyorum.</span>
+                                </label>
+                            </div>
                         </li>
                     </ul>
+                    <button type="button" class="btn btn-primary" id="onKayitGonder">Ön Kayıt Formu
+                        Gönder</button>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of lightbox-basic -->
-    <!-- end of details lightbox 1 -->
-
-    <!-- Details Lightbox 2 -->
-    <div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="container">
-            <div class="row">
-                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                <div class="col-lg-8">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/details-lightbox-2.svg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <h3>Search To Optimize</h3>
-                    <hr>
-                    <h5>Core feature</h5>
-                    <p>The emailing module basically will speed up your email marketing operations while offering more
-                        subscriber control.</p>
-                    <p>Do you need to build lists for your email campaigns? It just got easier with Evolo.</p>
-                    <ul class="list-unstyled li-space-lg">
-                        <li class="media">
-                            <i class="fas fa-check"></i>
-                            <div class="media-body">List building framework</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-check"></i>
-                            <div class="media-body">Easy database browsing</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-check"></i>
-                            <div class="media-body">User administration</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-check"></i>
-                            <div class="media-body">Automate user signup</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-check"></i>
-                            <div class="media-body">Quick formatting tools</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-check"></i>
-                            <div class="media-body">Fast email checking</div>
-                        </li>
-                    </ul>
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of details lightbox 2 -->
+    <!-- end of details lightbox 3 -->
     <!-- end of details lightboxes -->
-
 
     <!-- Pricing -->
     <div id="pricing" class="cards-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Çoklu Ödeme Seçenekleri</h2>
-                    <p class="p-heading p-large">Scoutive Spor Okulu Ödeme Sistemleri</p>
+                    <h2>Şubelerimiz</h2>
+                    <p class="p-heading p-large">Bir çok bölgede hizmet veren Scoutive Spor Okulları</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -422,34 +596,25 @@
                     <!-- Card-->
                     <div class="card">
                         <div class="card-body">
-                            <div class="card-title">Temel</div>
-                            <div class="card-subtitle">Temel Bileşenler</div>
-                            <hr class="cell-divide-hr">
-                            <div class="price">
-                                <span class="currency">₺</span><span class="value">199</span>
-                                <div class="frequency">aylık</div>
-                            </div>
+                            <div class="card-title">İstanbul Avrupa</div>
+                            <div class="card-subtitle">Şişli Scoutive Spor Okulu</div>
                             <hr class="cell-divide-hr">
                             <ul class="list-unstyled li-space-lg">
                                 <li class="media">
                                     <i class="fas fa-check"></i>
-                                    <div class="media-body">Improve Your Email Marketing</div>
+                                    <div class="media-body">Futbol</div>
                                 </li>
                                 <li class="media">
                                     <i class="fas fa-check"></i>
-                                    <div class="media-body">User And Admin Rights Control</div>
+                                    <div class="media-body">Basketbol</div>
                                 </li>
                                 <li class="media">
-                                    <i class="fas fa-times"></i>
-                                    <div class="media-body">List Building And Cleaning</div>
+                                    <i class="fas fa-check"></i>
+                                    <div class="media-body">Yüzme</div>
                                 </li>
                                 <li class="media">
-                                    <i class="fas fa-times"></i>
-                                    <div class="media-body">Collected Data Management</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-times"></i>
-                                    <div class="media-body">More Planning And Evaluation</div>
+                                    <i class="fas fa-check"></i>
+                                    <div class="media-body">Taekwondo</div>
                                 </li>
                             </ul>
                         </div>
@@ -459,34 +624,26 @@
                     <!-- Card-->
                     <div class="card">
                         <div class="card-body">
-                            <div class="card-title">Standart</div>
-                            <div class="card-subtitle">Standart Bileşenler</div>
-                            <hr class="cell-divide-hr">
-                            <div class="price">
-                                <span class="currency">₺</span><span class="value">299</span>
-                                <div class="frequency">aylık</div>
-                            </div>
+                            <div class="card-title">İstanbul Asya</div>
+                            <div class="card-subtitle">Kadıköy Scoutive Spor Okulu</div>
                             <hr class="cell-divide-hr">
                             <ul class="list-unstyled li-space-lg">
                                 <li class="media">
                                     <i class="fas fa-check"></i>
-                                    <div class="media-body">Improve Your Email Marketing</div>
+                                    <div class="media-body">Futbol</div>
                                 </li>
                                 <li class="media">
                                     <i class="fas fa-check"></i>
-                                    <div class="media-body">User And Admin Rights Control</div>
+                                    <div class="media-body">Tenis
+                                    </div>
                                 </li>
                                 <li class="media">
                                     <i class="fas fa-check"></i>
-                                    <div class="media-body">List Building And Cleaning</div>
+                                    <div class="media-body">Hentbol</div>
                                 </li>
                                 <li class="media">
                                     <i class="fas fa-check"></i>
-                                    <div class="media-body">Collected Data Management</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-times"></i>
-                                    <div class="media-body">More Planning And Evaluation</div>
+                                    <div class="media-body">Taekwondo</div>
                                 </li>
                             </ul>
                         </div>
@@ -496,47 +653,81 @@
                     <!-- Card-->
                     <div class="card">
                         <div class="label">
-                            <p class="best-value">En İyi Tercih</p>
+                            <p class="best-value">Yetişkinler İçin</p>
                         </div>
                         <div class="card-body">
-                            <div class="card-title">İleri Seviye</div>
-                            <div class="card-subtitle">Gelişmiş İleri Seviye Bileşenler</div>
-                            <hr class="cell-divide-hr">
-                            <div class="price">
-                                <span class="currency">₺</span><span class="value">399</span>
-                                <div class="frequency">aylık</div>
-                            </div>
+                            <div class="card-title">İstanbul</div>
+                            <div class="card-subtitle">Beşiktaş Scoutive Spor Okulu</div>
                             <hr class="cell-divide-hr">
                             <ul class="list-unstyled li-space-lg">
                                 <li class="media">
                                     <i class="fas fa-check"></i>
-                                    <div class="media-body">Improve Your Email Marketing</div>
+                                    <div class="media-body">Golf</div>
                                 </li>
                                 <li class="media">
                                     <i class="fas fa-check"></i>
-                                    <div class="media-body">User And Admin Rights Control</div>
+                                    <div class="media-body">Taekwondo</div>
                                 </li>
                                 <li class="media">
                                     <i class="fas fa-check"></i>
-                                    <div class="media-body">List Building And Cleaning</div>
+                                    <div class="media-body">Koşu</div>
                                 </li>
                                 <li class="media">
                                     <i class="fas fa-check"></i>
-                                    <div class="media-body">Collected Data Management</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-check"></i>
-                                    <div class="media-body">More Planning And Evaluation</div>
+                                    <div class="media-body">Body Build</div>
                                 </li>
                             </ul>
                         </div>
                     </div> <!-- end of card -->
                     <!-- end of card -->
-
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of cards-2 -->
+
+    <!-- Bar -->
+    <div class="cards-1">
+        <div class="container">
+            <div class="row">
+                <!-- Card -->
+                <div class="col-lg-4">
+                    <img class="card-image" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                        alt="alternative">
+                    <div class="card-body">
+                        <h4 class="card-title">WhatsApp İle İletişime Geç</h4>
+                        <a class="whatsapp_button" target="_blank"
+                            href='https://api.whatsapp.com/send?phone=905394852066&text=Merhaba, Scoutive Spor Okulu hakkında bilgi almak istiyorum.'>0850
+                            800 12 34</a>
+                    </div>
+                </div>
+                <!-- end of card -->
+
+                <!-- Card -->
+                <div class="col-lg-4">
+                    <img class="card-image" src="images/services-icon-1.svg" alt="alternative">
+                    <div class="card-body">
+                        <h4 class="card-title">Bizi Ziyaret Edin</h4>
+                        <a class="adressLink"
+                            href="https://www.google.com/maps?ll=41.073828,28.979088&z=16&t=m&hl=tr&gl=TR&mapclient=embed&q=Yayla+Sk.+%C3%87a%C4%9Flayan+34403+K%C3%A2%C4%9F%C4%B1thane/%C4%B0stanbul">Çağlayan
+                            Mahallesi, Yayla Sokak, Kağıthane, İstanbul 34400, TR</a>
+                    </div>
+                </div>
+                <!-- end of card -->
+
+                <!-- Card -->
+                <div class="col-lg-4">
+                    <img class="card-image" src="images/services-icon-3.svg" alt="alternative">
+                    <div class="card-body">
+                        <h4 class="card-title">Ön Kayıt Formu Gönder</h4>
+                        <a class="btn-solid-reg popup-with-move-anim onkayit" href=" #onkayitformu">Ön
+                            Kayıt</a>
+                    </div>
+                </div>
+                <!-- end of card -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of services -->
     <!-- end of pricing -->
     <!-- Video -->
     <div class="basic-3">
@@ -552,9 +743,10 @@
                     <!-- Video Preview -->
                     <div class="image-container">
                         <div class="video-wrapper">
-                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=pRZ-2MOEivM"
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=Aopi5kk_T9o"
                                 data-effect="fadeIn">
-                                <img class="img-fluid" src="images/video-frame.svg" alt="alternative">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/07IOKqk08RY/maxresdefault.jpg"
+                                    alt="alternative">
                                 <span class="video-play-button">
                                     <span></span>
                                 </span>
@@ -563,8 +755,10 @@
                     </div> <!-- end of image-container -->
                     <!-- end of video preview -->
 
-                    <p>This video will show you a case study for one of our <strong>Major Customers</strong> and will
-                        help you understand why your startup needs Evolo in this highly competitive market</p>
+                    <p>Scoutive Spor Okullarına örnek olarak, <strong>Sultangazi Besyo Akademi</strong> görür
+                        sistemi aktif kullanır. Ortak ağ bağlantısı ile veli, öğrenci ve okul arasındaki ilişkilerde
+                        köprü olur.</p>
+                    </p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -582,7 +776,7 @@
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
-                    <h2>Testimonials</h2>
+                    <h2>Kazananlar Dedi ki!</h2>
 
                     <!-- Card Slider -->
                     <div class="slider-container">
@@ -654,7 +848,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Akademik Kadro</h2>
+                    <h2>Eğitmenlerimiz
+                    </h2>
                     <p class="p-heading p-large">Scoutive Spor Okulu Profesyonel Çalışma Ekibi</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -667,16 +862,16 @@
                             <img class="img-fluid" src="images/team-member-2.svg" alt="alternative">
                         </div> <!-- end of image-wrapper -->
                         <p class="p-large"><strong>Abdullah Külcü</strong></p>
-                        <p class="job-title">Business Developer</p>
+                        <p class="job-title">Branşlar: Futbol, Basketbol, Yüzme, Hentbol</p>
                         <span class="social-icons">
                             <span class="fa-stack">
-                                <a href="#your-link">
+                                <a href="https://www.facebook.com/facebookappTurkiye">
                                     <i class="fas fa-circle fa-stack-2x facebook"></i>
                                     <i class="fab fa-facebook-f fa-stack-1x"></i>
                                 </a>
                             </span>
                             <span class="fa-stack">
-                                <a href="#your-link">
+                                <a href="https://twitter.com/twitter">
                                     <i class="fas fa-circle fa-stack-2x twitter"></i>
                                     <i class="fab fa-twitter fa-stack-1x"></i>
                                 </a>
@@ -690,16 +885,16 @@
                             <img class="img-fluid" src="images/team-member-2.svg" alt="alternative">
                         </div> <!-- end of image-wrapper -->
                         <p class="p-large"><strong>Oğuzhan Demiröz</strong></p>
-                        <p class="job-title">Business Developer</p>
+                        <p class="job-title">Branşlar: Futbol, Basketbol, Yüzme, Hentbol</p>
                         <span class="social-icons">
                             <span class="fa-stack">
-                                <a href="#your-link">
+                                <a href="https://www.facebook.com/facebookappTurkiye">
                                     <i class="fas fa-circle fa-stack-2x facebook"></i>
                                     <i class="fab fa-facebook-f fa-stack-1x"></i>
                                 </a>
                             </span>
                             <span class="fa-stack">
-                                <a href="#your-link">
+                                <a href="https://twitter.com/twitter">
                                     <i class="fas fa-circle fa-stack-2x twitter"></i>
                                     <i class="fab fa-twitter fa-stack-1x"></i>
                                 </a>
@@ -713,16 +908,16 @@
                             <img class="img-fluid" src="images/team-member-2.svg" alt="alternative">
                         </div> <!-- end of image-wrapper -->
                         <p class="p-large"><strong>Gökhan Bahadır</strong></p>
-                        <p class="job-title">Web Developer</p>
+                        <p class="job-title">Branşlar: Futbol, Basketbol, Yüzme, Hentbol</p>
                         <span class="social-icons">
                             <span class="fa-stack">
-                                <a href="#your-link">
+                                <a href="#https://www.facebook.com/facebookappTurkiye">
                                     <i class="fas fa-circle fa-stack-2x facebook"></i>
                                     <i class="fab fa-facebook-f fa-stack-1x"></i>
                                 </a>
                             </span>
                             <span class="fa-stack">
-                                <a href="#your-link">
+                                <a href="https://twitter.com/twitter">
                                     <i class="fas fa-circle fa-stack-2x twitter"></i>
                                     <i class="fab fa-twitter fa-stack-1x"></i>
                                 </a>
@@ -735,17 +930,17 @@
                         <div class="image-wrapper">
                             <img class="img-fluid" src="images/team-member-2.svg" alt="alternative">
                         </div> <!-- end of image wrapper -->
-                        <p class="p-large"><strong>"Mücahit Çevik"</strong></p>
-                        <p class="job-title">Online Marketer</p>
+                        <p class="p-large"><strong>Mücahit Şimşek</strong></p>
+                        <p class="job-title">Branşlar: Futbol, Basketbol, Yüzme, Hentbol</p>
                         <span class="social-icons">
                             <span class="fa-stack">
-                                <a href="#your-link">
+                                <a href="https://www.facebook.com/facebookappTurkiye">
                                     <i class="fas fa-circle fa-stack-2x facebook"></i>
                                     <i class="fab fa-facebook-f fa-stack-1x"></i>
                                 </a>
                             </span>
                             <span class="fa-stack">
-                                <a href="#your-link">
+                                <a href="https://twitter.com/twitter">
                                     <i class="fas fa-circle fa-stack-2x twitter"></i>
                                     <i class="fab fa-twitter fa-stack-1x"></i>
                                 </a>
@@ -753,100 +948,286 @@
                         </span> <!-- end of social-icons -->
                     </div> <!-- end of team-member -->
                     <!-- end of team member -->
+                    <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-4 -->
+        <!-- end of about -->
+
+        <!-- Customers -->
+        <div class="slider-1" id="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Galeri</h2>
+                        <!-- Image Slider -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                            data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                            data-target="#image-gallery">
+                                            <img class="img-thumbnail"
+                                                src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="Another alt text">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                            data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                            data-target="#image-gallery">
+                                            <img class="img-thumbnail"
+                                                src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="Another alt text">
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                            data-image="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                            data-target="#image-gallery">
+                                            <img class="img-thumbnail"
+                                                src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="Another alt text">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                                            data-title="Test1"
+                                            data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                            data-target="#image-gallery">
+                                            <img class="img-thumbnail"
+                                                src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="Another alt text">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                                            data-title="Im so Mücahit Şimşek"
+                                            data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                            data-target="#image-gallery">
+                                            <img class="img-thumbnail"
+                                                src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="Another alt text">
+                                        </a>
+                                    </div>
 
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-4 -->
-    <!-- end of about -->
+
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                                            data-title="Im so Mücahit Şimşek"
+                                            data-image="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                            data-target="#image-gallery">
+                                            <img class="img-thumbnail"
+                                                src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="Another alt text">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                                            data-title="Im so Mücahit Şimşek"
+                                            data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                            data-target="#image-gallery">
+                                            <img class="img-thumbnail"
+                                                src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="Another alt text">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                                            data-title="Im so Mücahit Şimşek"
+                                            data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                            data-target="#image-gallery">
+                                            <img class="img-thumbnail"
+                                                src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="Another alt text">
+                                        </a>
+                                    </div>
 
 
-    <!-- Contact -->
-    <div id="contact" class="form-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>İletişim Bilgileri</h2>
-                    <ul class="list-unstyled li-space-lg">
-                        <li><i class="fas fa-map-marker-alt"></i>Kağıthane, İST 34400, TR</li>
-                        <li><i class="fas fa-phone"></i><a class="turquoise" href="tel:003024630820">+0850 800 1234</a>
-                        </li>
-                        <li><i class="fas fa-envelope"></i><a class="turquoise"
-                                href="mailto:office@scoutive.net">office@scoutive.net</a></li>
-                    </ul>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="map-responsive">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.507640204439!3d37.757814996609724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sro!4v1498231462606"
-                            allowfullscreen></iframe>
-                    </div>
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                                            data-title="Im so Mücahit Şimşek"
+                                            data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                            data-target="#image-gallery">
+                                            <img class="img-thumbnail"
+                                                src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="Another alt text">
+                                        </a>
+                                    </div>
 
-                    <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">İsminiz</label>
-                            <div class="help-block with-errors"></div>
+
+
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                                            data-title="Im so Mücahit Şimşek"
+                                            data-image="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                            data-target="#image-gallery">
+                                            <img class="img-thumbnail"
+                                                src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="Another alt text">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                                            data-title="Im so Mücahit Şimşek"
+                                            data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                            data-target="#image-gallery">
+                                            <img class="img-thumbnail"
+                                                src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="Another alt text">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                                            data-title="Im so Mücahit Şimşek"
+                                            data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                            data-target="#image-gallery">
+                                            <img class="img-thumbnail"
+                                                src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="Another alt text">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="image-gallery-title"></h4>
+                                                <button type="button" class="close" data-dismiss="modal"><span
+                                                        aria-hidden="true">×</span><span class="sr-only">Close</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary float-left"
+                                                    id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                                                </button>
+
+                                                <button type="button" id="show-next-image"
+                                                    class="btn btn-secondary float-right"><i
+                                                        class="fa fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email Adresiniz</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Mesajınız</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>Scoutive sözleşmelerini
-                            okudum ve kabul ediyorum. <a href="privacy-policy.html">Privacy Policy</a> ve <a
-                                href="terms-conditions.html">Terms Conditions</a>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Mesaj Gönder</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
+                        <!-- end of image slider -->
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-2 -->
-    <!-- end of contact -->
-    <!-- Copyright -->
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 Scoutive - Template by <a
-                            href="https://scoutive.net">Scoutive</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright -->
-    <!-- end of copyright -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of slider-1 -->
+        <!-- end of customers -->
 
 
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+        <!-- Contact -->
+        <div id="contact" class="form-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>İletişim Bilgileri</h2>
+                        <ul class="list-unstyled li-space-lg">
+                            <li><i class="fas fa-map-marker-alt"></i>Çağlayan Mahallesi, Yayla Sokak, Kağıthane,
+                                İstanbul
+                                34400, TR</li>
+                            <li><i class="fas fa-phone"></i><a class="turquoise" href="tel:003024630820">+0850 800
+                                    1234</a>
+                            </li>
+                            <li><i class="fas fa-envelope"></i><a class="turquoise"
+                                    href="mailto:info@scoutive.net">info@scoutive.net</a></li>
+                        </ul>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="map-responsive">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.785261854803!2d28.978723217046674!3d41.07368633776505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6e7212ec1c1%3A0x9cb40692279d5c68!2zw4dhxJ9sYXlhbiwgWWF5bGEgU2suLCAzNDQwMyBLw6LEn8SxdGhhbmUvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1578245472420!5m2!1str!2str"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+
+                        <!-- Contact Form -->
+                        <form id="contactForm" data-toggle="validator" data-focus="false">
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="cname" required>
+                                <label class="label-control" for="cname">İsminiz</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="cemail" required>
+                                <label class="label-control" for="cemail">Email Adresiniz</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                                <label class="label-control" for="cmessage">Mesajınız</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="cterms" value="Evet" required>Scoutive
+                                sözleşmelerini
+                                okudum ve kabul ediyorum. <a href="privacy-policy.html">Privacy Policy</a> ve <a
+                                    href="terms-conditions.html">Terms Conditions</a>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control-submit-button">Mesaj Gönder</button>
+                            </div>
+                            <input type="hidden" id="clocation">
+                            <input type="hidden" id="creferrer">
+                            <div class="form-message">
+                                <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                            </div>
+                        </form>
+                        <!-- end of contact form -->
+                        <script>
+                            var sc_location = window.location.href.split("/")[2]
+                            var sc_referrer = document.referrer
+                            document.getElementById("clocation").value = sc_location
+                            document.getElementById("creferrer").value = sc_referrer || sc_location
+                        </script>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of form-2 -->
+        <!-- end of contact -->
+        <!-- Copyright -->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="p-small">Copyright © 2020 Scoutive - Template by <a
+                                href="https://scoutive.net">Scoutive</a></p>
+                    </div> <!-- end of col -->
+                </div> <!-- enf of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of copyright -->
+        <!-- end of copyright -->
+
+
+        <!-- Scripts -->
+        <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+        <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+        <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+        <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+        <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+        <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+        <script src="js/scripts.js"></script> <!-- Custom scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
 </body>
 
 </html>
