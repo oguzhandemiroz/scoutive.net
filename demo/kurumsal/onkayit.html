@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="author" content="Scoutive" />
+        
+        <!-- Document title -->
+        <title>Scoutive | Kurumsal Site</title>
+        <!-- Stylesheets & Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600|Montserrat:400,500,600,700|Raleway:100,300,600,700,800"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@9.7.1/dist/sweetalert2.css" rel="stylesheet" />
+        <link href="./assets/css/plugins.css" rel="stylesheet" />
+        <link href="./assets/css/style.css" rel="stylesheet" />
+        <link href="./assets/css/responsive.css" rel="stylesheet" />
+        <link rel="shortcut icon" href="https://www.scoutive.net/img/favicon.ico" type="image/x-icon" />
+    </head>
+
+    <body>
+        <!-- Wrapper -->
+        <div id="wrapper">
+            <!-- Header -->
+            <header id="header" class="header header-fullwidth header-sticky sticky-active">
+                <div id="header-wrap">
+                    <div class="container">
+                        <!--Logo-->
+                        <div id="logo">
+                            <a href="index.html" class="logo">
+                                <img src="https://www.scoutive.net/img/Scoutive.svg" alt="Scoutive Logo" />
+                            </a>
+                        </div>
+                        <!--End: Logo-->
+
+                        <!--Navigation Resposnive Trigger-->
+                        <div id="mainMenu-trigger">
+                            <button class="lines-button x"><span class="lines"></span></button>
+                        </div>
+                        <!--end: Navigation Resposnive Trigger-->
+
+                        <!--Navigation-->
+                        <div id="mainMenu" class="light">
+                            <div class="container">
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html">Ana Sayfa</a></li>
+                                        <li class="dropdown">
+                                            <a href="hakkimizda.html">Kurumsal</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                                                <li><a href="misyonumuz.html">Misyon</a></li>
+                                                <li><a href="vizyonumuz.html">Vizyon</a></li>
+                                                <li><a href="akademik.html">Akademik Kadro</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="blog.html">Haberler</a></li>
+                                        <li><a href="galeri.html">Galeri</a></li>
+                                        <li><a href="okullar.html">Okullar</a></li>
+                                        <li><a href="transferler.html">Transferler</a></li>
+                                        <li><a href="iletisim.html">İletişim</a></li>
+                                        <li>
+                                            <a href="onkayit.html" class="btn btn-default btn-onkayit">Ön Kayıt</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!--end: Navigation-->
+                    </div>
+                </div>
+            </header>
+            <!-- end: Header -->
+
+            <section id="page-title" style="background-color: #a80532;">
+                <div class="container">
+                    <div class="page-title">
+                        <h1 style="color: #fdb813;" class="m-b-0">Ön Kayıt Başvurusu</h1>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Body -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="content col-lg-12 m-t-20">
+                        <form class="card" id="preRegistrationForm">
+                            <div class="card-body">
+                                <h3>Öğrenci Bilgileri</h3>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label>Öğrenci Adı<span class="form-required">*</span></label>
+                                        <input type="text" class="form-control" id="ogrenci_adi" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Öğrenci Soyadı<span class="form-required">*</span></label>
+                                        <input type="text" class="form-control" id="ogrenci_soyadi" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label>Doğum Tarihi<span class="form-required">*</span></label>
+                                        <input
+                                            type="text"
+                                            name="field-name"
+                                            class="form-control"
+                                            data-mask="00/00/1900"
+                                            data-mask-clearifnotmatch="true"
+                                            autocomplete="off"
+                                            maxlength="10"
+                                            id="ogrenci_dogum_tarih"
+                                        />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="form-label">Cinsiyet</label>
+                                        <div class="custom-controls-stacked">
+                                            <span class="custom-control custom-radio custom-control-inline m-r-10">
+                                                <input
+                                                    type="radio"
+                                                    class="custom-control-input"
+                                                    id="ogrenci_cinsiyet"
+                                                    value="0"
+                                                />
+                                                <span class="custom-control-label">Erkek</span>
+                                            </span>
+                                            <span class="custom-control custom-radio custom-control-inline">
+                                                <input
+                                                    type="radio"
+                                                    class="custom-control-input"
+                                                    id="ogrenci_cinsiyet"
+                                                    value="1"
+                                                />
+                                                <span class="custom-control-label">Kız</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label>Telefon Numarası</label>
+                                        <input
+                                            type="text"
+                                            id="ogrenci_telefon"
+                                            class="form-control"
+                                            data-mask="(500) 000 00 00"
+                                            data-mask-clearifnotmatch="true"
+                                            autocomplete="off"
+                                            maxlength="15"
+                                        />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Eposta</label>
+                                        <input
+                                            class="form-control"
+                                            id="ogrenci_email"
+                                            onkeyup="Complete(this, event)"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-lg-6">
+                                        <label>Lokasyon</label>
+                                        <select class="form-control" id="lokasyon">
+                                            <option value="istanbul-avrupa">İstanbul Avrupa</option>
+                                            <option value="istanbul-anadolu">İstanbul Anadolu </option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label>Branş</label>
+                                        <select class="form-control" id="branch">
+                                            <option value="1">Futbol</option>
+                                            <option value="2">Basketbol</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <h3>Veli Bilgileri</h3>
+                                <div class="row">
+                                    <div class="form-group col-lg-6">
+                                        <label>Veli Adı<span class="form-required">*</span></label>
+                                        <input type="text" class="form-control" id="veli_adi" />
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label>Veli Soyadı<span class="form-required">*</span></label>
+                                        <input type="text" class="form-control" id="veli_soyadi" />
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label>Telefon Numarası<span class="form-required">*</span></label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="veli_telefon"
+                                            data-mask="(500) 000 00 00"
+                                            data-mask-clearifnotmatch="true"
+                                            autocomplete="off"
+                                            maxlength="15"
+                                        />
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label>Eposta</label>
+                                        <input class="form-control" id="veli_email" onkeyup="Complete(this, event)" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-lg-12">
+                                        <label class="custom-control custom-checkbox custom-control-inline">
+                                            <input
+                                                type="checkbox"
+                                                class="custom-control-input"
+                                                id="permission"
+                                                name="example-inline-checkbox1"
+                                                value="izin"
+                                            />
+                                            <span
+                                                class="custom-control-label permission"
+                                                style="color: rgb(205, 32, 31);margin-left:3px"
+                                            >
+                                                Formdaki bilgiler dahilinde gerektiğinde veliyle ve öğrenciyle iletişime
+                                                geçilmesini kabul ediyor ve onaylıyorum.</span
+                                            >
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary" onclick="ValidateRegister();">
+                                    Ön Kayıt Formu Gönder
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer" class="footer-light">
+                <div class="footer-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <!-- Footer widget area 1 -->
+                                <div class="widget clearfix widget-contact-us">
+                                    <h4>Scoutıve Hakkında</h4>
+                                    <p>
+                                        Scoutive Spor Okulları olarak; en önemli ve değerli varlığımız olan
+                                        çocuklarımızın zihinsel ve fiziksel gelişimlerine katkıda bulunmak bizlere büyük
+                                        mutluluk vermektedir. Gelişen ve değişen dünya yapısı ile Scoutive Spor Kulübü
+                                        olarak bizde bu değişimin bir parçası olmuş bulunmaktayız.
+                                    </p>
+                                    <!-- Social icons -->
+                                    <div class="social-icons social-icons-border float-left m-t-20">
+                                        <ul>
+                                            <li class="social-youtube">
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                            </li>
+                                            <li class="social-facebook">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li class="social-twitter">
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li class="social-youtube">
+                                                <a href="#"><i class="fa fa-youtube"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- end: Social icons -->
+                                </div>
+                                <!-- end: Footer widget area 1 -->
+                            </div>
+                            <div class="col-md-4 col-md-offset-1">
+                                <!-- Footer widget area 2 -->
+                                <div class="widget">
+                                    <h4>Hızlı Menü</h4>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-icon list-icon-arrow">
+                                                <li><a href="index.html">Anasayfa</a></li>
+                                                <li><a href="hakkimizda.html">Kurumsal</a></li>
+                                                <li><a href="blog.html">Haberler</a></li>
+                                                <li><a href="galeri.html">Galeri</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-icon list-icon-arrow">
+                                                <li><a href="okullar.html">Okullar</a></li>
+                                                <li><a href="transferler.html">Transferler</a></li>
+                                                <li><a href="iletisim.html">İletişim</a></li>
+                                                <a
+                                                    class="btn btn-secondary btn-onkayit"
+                                                    style="color: #fff !important;"
+                                                    href="onkayit.html"
+                                                    >Ön Kayıt</a
+                                                >
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end: Footer widget area 2 -->
+                            </div>
+                            <div class="col-md-3">
+                                <!-- Footer widget area 3 -->
+                                <div class="widget">
+                                    <h4>Haberler</h4>
+                                    <div class="post-thumbnail-list">
+                                        <div class="post-thumbnail-entry">
+                                            <div class="post-thumbnail-content">
+                                                <a href="blog/blog-detay-2.html"
+                                                    ><b>Futbol Okullarının Faydaları?</b><br />
+                                                    <span class="post-category">
+                                                        Futbol Okulları ile ilgili olarak faaliyetleri kayıt altına
+                                                        almak kadar önemli bir diğer adım ise kayıt altına alınan futbol
+                                                        okullarına eğitim desteği vermek...</span
+                                                    ></a
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="post-thumbnail-entry">
+                                            <div class="post-thumbnail-content">
+                                                <a href="blog/blog-detay-4.html"
+                                                    ><b>Grup Maçımız</b><br />
+                                                    <span class="post-category">
+                                                        2020 Futbol Okulumuzun İlk Grup Maçları 20 Mart 2020
+                                                    </span></a
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="post-thumbnail-entry">
+                                            <div class="post-thumbnail-content">
+                                                <a href="blog/blog-detay-3.html"
+                                                    ><b>2020 Kış Kampı</b><br />
+                                                    <span class="post-category">
+                                                        KAMP OTELİ: DEDEMAN HOTELS BOSTANCI<br />
+                                                        KAMP TARİHİ: 01 ŞUBAT – 05 ŞUBAT 2020</span
+                                                    ></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end: Footer widget area 3 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end: Footer -->
+        </div>
+
+        <!-- Go to top button -->
+        <a id="goToTop"><i class="fa fa-angle-up top-icon"></i><i class="fa fa-angle-up"></i></a>
+        <!--Plugins-->
+        <script src="./assets/js/jquery.js"></script>
+        <script src="./assets/js/plugins.js"></script>
+
+        <!--Template functions-->
+        <script src="./assets/js/functions.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.7.1/dist/sweetalert2.all.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+        <script src="./assets/js/custom.js"></script>
+    </body>
+</html>

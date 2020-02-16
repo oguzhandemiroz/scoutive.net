@@ -1,0 +1,824 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1245" height="1471" viewBox="0 0 1245 1471">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cd201f;
+      }
+
+      .cls-14, .cls-2, .cls-20, .cls-40, .cls-44, .cls-58, .cls-61 {
+        fill: #aab0b6;
+      }
+
+      .cls-12, .cls-22, .cls-3, .cls-53, .cls-54, .cls-63 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #2090e6;
+      }
+
+      .cls-5 {
+        fill: #fd9644;
+      }
+
+      .cls-56, .cls-6 {
+        fill: #dc6362;
+      }
+
+      .cls-7 {
+        fill: #a3e272;
+      }
+
+      .cls-8 {
+        fill: #a9afb5;
+      }
+
+      .cls-73, .cls-9 {
+        fill: #547dc9;
+      }
+
+      .cls-10, .cls-74 {
+        fill: #9aa0ac;
+      }
+
+      .cls-11 {
+        clip-path: url(#clip-Scoutive_Anasayfa);
+      }
+
+      .cls-12, .cls-15 {
+        stroke: rgba(0,40,100,0.12);
+      }
+
+      .cls-13, .cls-19, .cls-23, .cls-25, .cls-38, .cls-39, .cls-45 {
+        fill: #343a40;
+      }
+
+      .cls-13, .cls-39 {
+        font-size: 24px;
+      }
+
+      .cls-13, .cls-18, .cls-19, .cls-20, .cls-22, .cls-23, .cls-40, .cls-44, .cls-45, .cls-53, .cls-55, .cls-58 {
+        font-family: SourceSansPro-SemiBold, Source Sans Pro;
+        font-weight: 600;
+      }
+
+      .cls-14, .cls-38, .cls-58 {
+        font-size: 18px;
+      }
+
+      .cls-14, .cls-38, .cls-39, .cls-54, .cls-61, .cls-71, .cls-73, .cls-74 {
+        font-family: SourceSansPro-Regular, Source Sans Pro;
+      }
+
+      .cls-15, .cls-28, .cls-33, .cls-35, .cls-41, .cls-48, .cls-50, .cls-51, .cls-68, .cls-69, .cls-78, .cls-80 {
+        fill: none;
+      }
+
+      .cls-16, .cls-71 {
+        fill: #dbdde0;
+      }
+
+      .cls-17 {
+        fill: #cfd4da;
+      }
+
+      .cls-18 {
+        fill: #888e95;
+        font-size: 14px;
+      }
+
+      .cls-19, .cls-53 {
+        font-size: 16px;
+      }
+
+      .cls-20, .cls-23, .cls-61 {
+        font-size: 13px;
+      }
+
+      .cls-21 {
+        fill: #a41a19;
+      }
+
+      .cls-22 {
+        font-size: 11px;
+      }
+
+      .cls-24 {
+        fill: #a31a19;
+      }
+
+      .cls-26 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-27 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-28, .cls-51, .cls-63, .cls-68, .cls-69 {
+        stroke: #aab0b6;
+      }
+
+      .cls-28, .cls-33, .cls-35, .cls-48, .cls-50, .cls-68, .cls-78 {
+        stroke-linecap: round;
+      }
+
+      .cls-28, .cls-33, .cls-35, .cls-48, .cls-50, .cls-68 {
+        stroke-linejoin: round;
+      }
+
+      .cls-28 {
+        stroke-width: 1.667px;
+      }
+
+      .cls-29 {
+        fill: #f3f4f5;
+      }
+
+      .cls-30 {
+        clip-path: url(#clip-path-6);
+      }
+
+      .cls-31 {
+        fill: #f5d657;
+      }
+
+      .cls-32 {
+        clip-path: url(#clip-path-7);
+      }
+
+      .cls-33, .cls-35 {
+        stroke: #fff;
+      }
+
+      .cls-33 {
+        stroke-width: 2.273px;
+      }
+
+      .cls-34 {
+        clip-path: url(#clip-path-8);
+      }
+
+      .cls-35, .cls-41, .cls-51, .cls-68 {
+        stroke-width: 2px;
+      }
+
+      .cls-36 {
+        fill: #a3e072;
+      }
+
+      .cls-37 {
+        clip-path: url(#clip-path-9);
+      }
+
+      .cls-40 {
+        font-size: 19px;
+      }
+
+      .cls-41 {
+        stroke: #f3f4f5;
+      }
+
+      .cls-41, .cls-51 {
+        stroke-dasharray: 7;
+      }
+
+      .cls-42, .cls-56 {
+        stroke: #dc6362;
+      }
+
+      .cls-42, .cls-43 {
+        stroke-width: 4px;
+      }
+
+      .cls-42 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-43 {
+        stroke: #a3e272;
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-44 {
+        font-size: 17px;
+      }
+
+      .cls-45 {
+        font-size: 23px;
+      }
+
+      .cls-46 {
+        fill: #fff0f0;
+        stroke: #fff0f0;
+      }
+
+      .cls-47 {
+        clip-path: url(#clip-path-10);
+      }
+
+      .cls-48 {
+        stroke: #cd201f;
+      }
+
+      .cls-48, .cls-50 {
+        stroke-width: 2.971px;
+      }
+
+      .cls-49 {
+        fill: #cfeab3;
+        stroke: #cfeab3;
+      }
+
+      .cls-50 {
+        stroke: #8ecf4d;
+      }
+
+      .cls-52 {
+        fill: #354052;
+      }
+
+      .cls-54 {
+        font-size: 12px;
+      }
+
+      .cls-57 {
+        fill: #f5f7fb;
+      }
+
+      .cls-59 {
+        clip-path: url(#clip-path-12);
+      }
+
+      .cls-60 {
+        clip-path: url(#clip-path-13);
+      }
+
+      .cls-62 {
+        clip-path: url(#clip-path-19);
+      }
+
+      .cls-64 {
+        fill: #f1c40f;
+      }
+
+      .cls-65 {
+        fill: #5eba00;
+      }
+
+      .cls-66 {
+        fill: #cc201f;
+      }
+
+      .cls-67 {
+        fill: #485057;
+      }
+
+      .cls-70 {
+        clip-path: url(#clip-path-20);
+      }
+
+      .cls-71, .cls-73, .cls-74 {
+        font-size: 15px;
+      }
+
+      .cls-72 {
+        clip-path: url(#clip-path-21);
+      }
+
+      .cls-75 {
+        clip-path: url(#clip-path-22);
+      }
+
+      .cls-76 {
+        clip-path: url(#clip-path-23);
+      }
+
+      .cls-77 {
+        clip-path: url(#clip-path-26);
+      }
+
+      .cls-78 {
+        stroke: #567bc9;
+      }
+
+      .cls-79 {
+        stroke: none;
+      }
+
+      .cls-81 {
+        filter: url(#Line_181);
+      }
+
+      .cls-82 {
+        filter: url(#Rectangle_650-2);
+      }
+
+      .cls-83 {
+        filter: url(#Rectangle_650);
+      }
+
+      .cls-84 {
+        filter: url(#Line_179);
+      }
+    </style>
+    <filter id="Line_179" x="28.5" y="1088" width="373" height="4" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_867" data-name="Rectangle 867" class="cls-1" width="60" height="50" transform="translate(162 255)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_866" data-name="Rectangle 866" class="cls-2" width="15" height="15" transform="translate(157 253)"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <rect id="Rectangle_594" data-name="Rectangle 594" class="cls-3" width="25" height="25" transform="translate(496 216)"/>
+    </clipPath>
+    <clipPath id="clip-path-7">
+      <rect id="Rectangle_589" data-name="Rectangle 589" class="cls-3" width="25" height="25" transform="translate(458 175)"/>
+    </clipPath>
+    <clipPath id="clip-path-8">
+      <rect id="Rectangle_48" data-name="Rectangle 48" class="cls-3" width="20" height="20" transform="translate(118 191)"/>
+    </clipPath>
+    <clipPath id="clip-path-9">
+      <rect id="Rectangle_141" data-name="Rectangle 141" class="cls-3" width="20" height="20" transform="translate(52 191)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" y1="-0.247" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cd201f" stop-opacity="0.745"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1.247" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5eba00" stop-opacity="0.749"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="Rectangle_650" x="78" y="709" width="208" height="98" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path-10">
+      <rect id="Rectangle_83" data-name="Rectangle 83" class="cls-4" width="18" height="18" transform="translate(77 100)"/>
+    </clipPath>
+    <filter id="Rectangle_650-2" x="947" y="609" width="208" height="98" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Line_181" x="418.5" y="1088" width="403" height="4" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-4"/>
+      <feFlood flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path-12">
+      <rect id="Rectangle_900" data-name="Rectangle 900" class="cls-5" width="50" height="50" transform="translate(291 20)"/>
+    </clipPath>
+    <clipPath id="clip-path-13">
+      <rect id="Rectangle_899" data-name="Rectangle 899" class="cls-6" width="13" height="13" transform="translate(129 314)"/>
+    </clipPath>
+    <clipPath id="clip-path-19">
+      <rect id="Rectangle_911" data-name="Rectangle 911" class="cls-7" width="50" height="50" transform="translate(297 102)"/>
+    </clipPath>
+    <clipPath id="clip-path-20">
+      <rect id="Rectangle_919" data-name="Rectangle 919" class="cls-8" width="15" height="15" transform="translate(-0.377 -3)"/>
+    </clipPath>
+    <clipPath id="clip-path-21">
+      <rect id="Rectangle_6" data-name="Rectangle 6" class="cls-9" width="20" height="20"/>
+    </clipPath>
+    <clipPath id="clip-path-22">
+      <rect id="Rectangle_920" data-name="Rectangle 920" class="cls-10" width="20" height="20"/>
+    </clipPath>
+    <clipPath id="clip-path-23">
+      <rect id="Rectangle_119" data-name="Rectangle 119" class="cls-10" width="15" height="15"/>
+    </clipPath>
+    <clipPath id="clip-path-26">
+      <rect id="Rectangle_15" data-name="Rectangle 15" class="cls-10" width="17" height="15"/>
+    </clipPath>
+    <clipPath id="clip-Scoutive_Anasayfa">
+      <rect width="1245" height="1471"/>
+    </clipPath>
+  </defs>
+  <g id="Scoutive_Anasayfa" data-name="Scoutive Anasayfa" class="cls-11">
+    <rect class="cls-57" width="1245" height="1471"/>
+    <g id="Rectangle_884" data-name="Rectangle 884" class="cls-12" transform="translate(30 211)">
+      <rect class="cls-79" width="1185" height="273" rx="5"/>
+      <rect class="cls-80" x="0.5" y="0.5" width="1184" height="272" rx="4.5"/>
+    </g>
+    <g id="Rectangle_887" data-name="Rectangle 887" class="cls-12" transform="translate(30 506)">
+      <rect class="cls-79" width="1185" height="454" rx="5"/>
+      <rect class="cls-80" x="0.5" y="0.5" width="1184" height="453" rx="4.5"/>
+    </g>
+    <g id="Rectangle_855" data-name="Rectangle 855" class="cls-12" transform="translate(30 990)">
+      <rect class="cls-79" width="370" height="459" rx="5"/>
+      <rect class="cls-80" x="0.5" y="0.5" width="369" height="458" rx="4.5"/>
+    </g>
+    <text id="Aidat" class="cls-13" transform="translate(50 1024)"><tspan x="0" y="0">Aidat</tspan></text>
+    <text id="Ödeme_Yapmayanlar" data-name="Ödeme Yapmayanlar" class="cls-14" transform="translate(50 1054)"><tspan x="0" y="0">Ödeme Yapmayanlar</tspan></text>
+    <g class="cls-84" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <line id="Line_179-2" data-name="Line 179" class="cls-15" x2="370" transform="translate(30 1089)"/>
+    </g>
+    <circle id="_2222" data-name="2222" class="cls-16" cx="20" cy="20" r="20" transform="translate(50 1208)"/>
+    <circle id="_2222-2" data-name="2222" class="cls-16" cx="20" cy="20" r="20" transform="translate(50 1285)"/>
+    <circle id="_2222-3" data-name="2222" class="cls-16" cx="20" cy="20" r="20" transform="translate(50 1362)"/>
+    <g id="Grup_Red_1" data-name="Grup Red 1" transform="translate(30 989)">
+      <g id="Group_31" data-name="Group 31" transform="translate(-50 36)">
+        <circle id="Ellipse_15" data-name="Ellipse 15" class="cls-17" cx="20" cy="20" r="20" transform="translate(70 84)"/>
+        <text id="FU" class="cls-18" transform="translate(82 109)"><tspan x="0" y="0">FU</tspan></text>
+      </g>
+      <text id="Fatih_Uzun" data-name="Fatih Uzun" class="cls-19" transform="translate(70 136)"><tspan x="0" y="0">Fatih Uzun</tspan></text>
+      <text id="Tutar:_600_00_Ödenen:_600_000_" data-name="Tutar: 600,00 ₺, Ödenen: 600,000  ₺" class="cls-20" transform="translate(71 183)"><tspan x="0" y="0" xml:space="preserve">Tutar: 600,00 ₺, Ödenen: 600,000  ₺</tspan></text>
+      <text id="Kalan_Tutar:" data-name="Kalan Tutar:" class="cls-20" transform="translate(71 205)"><tspan x="0" y="0">Kalan Tutar:</tspan></text>
+      <rect id="Rectangle_593" data-name="Rectangle 593" class="cls-21" width="148" height="20" rx="3" transform="translate(70 145)"/>
+      <text id="ÖDEMESİ_365_GÜN_GECİKMİŞ_" data-name="ÖDEMESİ 365 GÜN GECİKMİŞ!" class="cls-22" transform="translate(75 159)"><tspan x="0" y="0">ÖDEMESİ 365 GÜN GECİKMİŞ!</tspan></text>
+      <text id="_0_00_" data-name="0,00 ₺ " class="cls-23" transform="translate(143 205)"><tspan x="0" y="0">0,00 ₺ </tspan></text>
+    </g>
+    <rect id="Rectangle_883" data-name="Rectangle 883" class="cls-2" width="73" height="10" rx="5" transform="translate(100 1210)"/>
+    <rect id="Rectangle_882" data-name="Rectangle 882" class="cls-2" width="73" height="10" rx="5" transform="translate(100 1287)"/>
+    <rect id="Rectangle_881" data-name="Rectangle 881" class="cls-2" width="73" height="10" rx="5" transform="translate(100 1364)"/>
+    <rect id="Rectangle_880" data-name="Rectangle 880" class="cls-24" width="148" height="10" rx="5" transform="translate(100 1235)"/>
+    <rect id="Rectangle_879" data-name="Rectangle 879" class="cls-24" width="148" height="10" rx="5" transform="translate(100 1312)"/>
+    <rect id="Rectangle_878" data-name="Rectangle 878" class="cls-24" width="148" height="10" rx="5" transform="translate(100 1389)"/>
+    <rect id="Rectangle_877" data-name="Rectangle 877" class="cls-16" width="194" height="10" rx="5" transform="translate(100 1250)"/>
+    <rect id="Rectangle_876" data-name="Rectangle 876" class="cls-16" width="194" height="10" rx="5" transform="translate(100 1327)"/>
+    <rect id="Rectangle_875" data-name="Rectangle 875" class="cls-16" width="194" height="10" rx="5" transform="translate(100 1404)"/>
+    <rect id="Rectangle_874" data-name="Rectangle 874" class="cls-16" width="68" height="10" rx="5" transform="translate(100 1255)"/>
+    <rect id="Rectangle_873" data-name="Rectangle 873" class="cls-16" width="68" height="10" rx="5" transform="translate(100 1332)"/>
+    <rect id="Rectangle_872" data-name="Rectangle 872" class="cls-16" width="68" height="10" rx="5" transform="translate(100 1409)"/>
+    <rect id="Rectangle_871" data-name="Rectangle 871" class="cls-25" width="33" height="10" rx="5" transform="translate(173 1255)"/>
+    <rect id="Rectangle_870" data-name="Rectangle 870" class="cls-25" width="33" height="10" rx="5" transform="translate(173 1332)"/>
+    <rect id="Rectangle_869" data-name="Rectangle 869" class="cls-25" width="33" height="10" rx="5" transform="translate(173 1409)"/>
+    <g id="el" class="cls-26" transform="translate(158 759)">
+      <path id="hand-holding-usd-solid" class="cls-1" d="M23.824,14.092l4.77,1.4a.823.823,0,0,1,.583.791.814.814,0,0,1-.8.82H25.246a2.409,2.409,0,0,1-.983-.215,1.161,1.161,0,0,0-1.345.2l-1.67,1.709a1.119,1.119,0,0,0-.2.26,1.222,1.222,0,0,0-.118.847,1.113,1.113,0,0,0,.459.69,6.875,6.875,0,0,0,3.033,1.123v1.729A1.55,1.55,0,0,0,25.951,25h1.527A1.55,1.55,0,0,0,29,23.438V21.719a5.465,5.465,0,0,0,4.7-6.152,5.684,5.684,0,0,0-4.092-4.658l-4.77-1.4a.823.823,0,0,1-.583-.791.814.814,0,0,1,.8-.82h3.129a2.409,2.409,0,0,1,.987.215,1.161,1.161,0,0,0,1.345-.2l1.67-1.709a1.086,1.086,0,0,0,.191-.254,1.223,1.223,0,0,0,.12-.849,1.115,1.115,0,0,0-.458-.692,6.879,6.879,0,0,0-3.034-1.123V1.563A1.55,1.55,0,0,0,27.487,0H25.96a1.55,1.55,0,0,0-1.527,1.563V3.281a5.468,5.468,0,0,0-4.7,6.152A5.689,5.689,0,0,0,23.824,14.092ZM49.682,32.041a2.69,2.69,0,0,0-3.744,0l-8.121,7.217A5.254,5.254,0,0,1,34.3,40.625H23.906a1.571,1.571,0,0,1,0-3.125h6.881a3.006,3.006,0,0,0,2.922-2.6,3.378,3.378,0,0,0,.04-.533,2.98,2.98,0,0,0-2.812-3.119H16.875a9.722,9.722,0,0,0-6.513,2.567L6.275,37.5H1.406A1.491,1.491,0,0,0,0,39.063v9.375A1.491,1.491,0,0,0,1.406,50H32.763a5.283,5.283,0,0,0,3.516-1.367L49.57,36.816a3.258,3.258,0,0,0,1.055-2.359,3.3,3.3,0,0,0-.942-2.417Z" transform="translate(166.687 255)"/>
+    </g>
+    <g id="Mask_Group_186" data-name="Mask Group 186" class="cls-27" transform="translate(208 859)">
+      <g id="more-vertical" transform="translate(154.5 250.5)">
+        <circle id="Ellipse_97" data-name="Ellipse 97" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 9.167)"/>
+        <circle id="Ellipse_98" data-name="Ellipse 98" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 3.333)"/>
+        <circle id="Ellipse_99" data-name="Ellipse 99" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 15)"/>
+      </g>
+    </g>
+    <g id="Mask_Group_197" data-name="Mask Group 197" class="cls-27" transform="translate(208 966)">
+      <g id="more-vertical-2" data-name="more-vertical" transform="translate(154.5 250.5)">
+        <circle id="Ellipse_106" data-name="Ellipse 106" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 9.167)"/>
+        <circle id="Ellipse_107" data-name="Ellipse 107" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 3.333)"/>
+        <circle id="Ellipse_108" data-name="Ellipse 108" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 15)"/>
+      </g>
+    </g>
+    <g id="Mask_Group_198" data-name="Mask Group 198" class="cls-27" transform="translate(208 1043)">
+      <g id="more-vertical-3" data-name="more-vertical" transform="translate(154.5 250.5)">
+        <circle id="Ellipse_109" data-name="Ellipse 109" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 9.167)"/>
+        <circle id="Ellipse_110" data-name="Ellipse 110" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 3.333)"/>
+        <circle id="Ellipse_111" data-name="Ellipse 111" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 15)"/>
+      </g>
+    </g>
+    <g id="Mask_Group_199" data-name="Mask Group 199" class="cls-27" transform="translate(208 1120)">
+      <g id="more-vertical-4" data-name="more-vertical" transform="translate(154.5 250.5)">
+        <circle id="Ellipse_112" data-name="Ellipse 112" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 9.167)"/>
+        <circle id="Ellipse_113" data-name="Ellipse 113" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 3.333)"/>
+        <circle id="Ellipse_114" data-name="Ellipse 114" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 15)"/>
+      </g>
+    </g>
+    <g id="Group_4" data-name="Group 4" transform="translate(156 219)">
+      <rect id="_4" data-name="4" class="cls-29" width="270" height="70" rx="5" transform="translate(774 65)"/>
+      <rect id="Rectangle_591" data-name="Rectangle 591" class="cls-16" width="40" height="10" rx="5" transform="translate(839 85)"/>
+      <rect id="Rectangle_592" data-name="Rectangle 592" class="cls-25" width="40" height="40" rx="5" transform="translate(789 80)"/>
+      <rect id="Rectangle_593-2" data-name="Rectangle 593" class="cls-2" width="60" height="10" rx="5" transform="translate(839 105)"/>
+      <g id="Mask_Group_107" data-name="Mask Group 107" class="cls-30" transform="translate(301 -128)">
+        <path id="question-circle-regular" class="cls-3" d="M12.9.4A12.5,12.5,0,1,0,25.4,12.9,12.5,12.5,0,0,0,12.9.4Zm0,22.581A10.081,10.081,0,1,1,22.984,12.9,10.075,10.075,0,0,1,12.9,22.984Zm5.405-12.863c0,3.38-3.65,3.432-3.65,4.681v.319a.6.6,0,0,1-.6.6h-2.3a.6.6,0,0,1-.6-.6v-.436c0-1.8,1.366-2.522,2.4-3.1.885-.5,1.428-.834,1.428-1.491,0-.869-1.109-1.446-2.005-1.446-1.169,0-1.708.553-2.467,1.511a.605.605,0,0,1-.84.107L8.259,9.2a.606.606,0,0,1-.133-.825A5.666,5.666,0,0,1,13.2,5.645C15.669,5.645,18.309,7.576,18.309,10.121ZM15.02,18.548A2.117,2.117,0,1,1,12.9,16.431,2.119,2.119,0,0,1,15.02,18.548Z" transform="translate(495.597 215.597)"/>
+      </g>
+    </g>
+    <g id="Group_3" data-name="Group 3" transform="translate(116 219)">
+      <rect id="_3" data-name="3" class="cls-29" width="270" height="70" rx="5" transform="translate(522 65)"/>
+      <rect id="Rectangle_584" data-name="Rectangle 584" class="cls-16" width="40" height="10" rx="5" transform="translate(587 85)"/>
+      <rect id="Rectangle_585" data-name="Rectangle 585" class="cls-31" width="40" height="40" rx="5" transform="translate(537 80)"/>
+      <rect id="Rectangle_587" data-name="Rectangle 587" class="cls-2" width="60" height="10" rx="5" transform="translate(587 105)"/>
+      <g id="Mask_Group_106" data-name="Mask Group 106" class="cls-32" transform="translate(87 -87)">
+        <g id="alert-circle" transform="translate(456.864 173.864)">
+          <circle id="Ellipse_69" data-name="Ellipse 69" class="cls-33" cx="11.364" cy="11.364" r="11.364" transform="translate(2.273 2.273)"/>
+          <line id="Line_96" data-name="Line 96" class="cls-33" y2="4.545" transform="translate(13.636 9.091)"/>
+          <line id="Line_97" data-name="Line 97" class="cls-33" x2="0.011" transform="translate(13.636 18.182)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_2" data-name="Group 2" transform="translate(76 219)">
+      <rect id="Rectangle_575" data-name="Rectangle 575" class="cls-29" width="270" height="70" rx="5" transform="translate(271 65)"/>
+      <rect id="Rectangle_581" data-name="Rectangle 581" class="cls-2" width="60" height="10" rx="5" transform="translate(336 105)"/>
+      <rect id="Rectangle_583" data-name="Rectangle 583" class="cls-16" width="40" height="10" rx="5" transform="translate(336 85)"/>
+      <rect id="Rectangle_582" data-name="Rectangle 582" class="cls-6" width="40" height="40" rx="5" transform="translate(286 80)"/>
+      <g id="Mask_Group_28" data-name="Mask Group 28" class="cls-34" transform="translate(178 -101)">
+        <g id="x" transform="translate(119.907 192.907)">
+          <line id="Line_11" data-name="Line 11" class="cls-35" x1="16.185" y2="16.185" transform="translate(0)"/>
+          <line id="Line_12" data-name="Line 12" class="cls-35" x2="16.185" y2="16.185" transform="translate(0)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_1" data-name="Group 1" transform="translate(35 219)">
+      <rect id="Rectangle_574" data-name="Rectangle 574" class="cls-29" width="270" height="70" rx="5" transform="translate(20 65)"/>
+      <rect id="Rectangle_579" data-name="Rectangle 579" class="cls-2" width="60" height="10" rx="5" transform="translate(85 105)"/>
+      <rect id="Rectangle_580" data-name="Rectangle 580" class="cls-16" width="40" height="10" rx="5" transform="translate(85 85)"/>
+      <rect id="Rectangle_578" data-name="Rectangle 578" class="cls-36" width="40" height="40" rx="5" transform="translate(35 80)"/>
+      <g id="Mask_Group_78" data-name="Mask Group 78" class="cls-37" transform="translate(-7 -101)">
+        <path id="check" class="cls-35" d="M19.757,4.143,8.073,15.827,2.762,10.516" transform="translate(50.74 191.235)"/>
+      </g>
+    </g>
+    <g id="Group_1-1" data-name="Group 1-1" transform="translate(35 219)">
+      <rect id="_45" data-name="45" class="cls-29" width="270" height="100" rx="5" transform="translate(20 155)"/>
+      <rect id="Rectangle_595" data-name="Rectangle 595" class="cls-2" width="50" height="10" rx="5" transform="translate(130 188)"/>
+      <rect id="Rectangle_596" data-name="Rectangle 596" class="cls-16" width="80" height="10" rx="5" transform="translate(115 213)"/>
+    </g>
+    <g id="Group_2-2" data-name="Group 2-2" transform="translate(325 219)">
+      <rect id="_45-2" data-name="45" class="cls-29" width="270" height="100" rx="5" transform="translate(20 155)"/>
+      <rect id="Rectangle_595-2" data-name="Rectangle 595" class="cls-2" width="50" height="10" rx="5" transform="translate(130 188)"/>
+      <rect id="Rectangle_596-2" data-name="Rectangle 596" class="cls-16" width="80" height="10" rx="5" transform="translate(115 213)"/>
+    </g>
+    <g id="Group_3-3" data-name="Group 3-3" transform="translate(615 221)">
+      <rect id="_45-3" data-name="45" class="cls-29" width="270" height="100" rx="5" transform="translate(20 155)"/>
+      <rect id="Rectangle_595-3" data-name="Rectangle 595" class="cls-2" width="50" height="10" rx="5" transform="translate(130 188)"/>
+      <rect id="Rectangle_596-3" data-name="Rectangle 596" class="cls-16" width="80" height="10" rx="5" transform="translate(115 213)"/>
+    </g>
+    <g id="Group_3-3-2" data-name="Group 3-3" transform="translate(905 221)">
+      <rect id="_45-4" data-name="45" class="cls-29" width="270" height="100" rx="5" transform="translate(20 155)"/>
+      <rect id="Rectangle_595-4" data-name="Rectangle 595" class="cls-2" width="50" height="10" rx="5" transform="translate(130 188)"/>
+      <rect id="Rectangle_596-4" data-name="Rectangle 596" class="cls-16" width="80" height="10" rx="5" transform="translate(115 213)"/>
+    </g>
+    <text id="Öğrenci_Yoklama_Durumu" data-name="Öğrenci Yoklama Durumu" class="cls-38" transform="translate(55 259)"><tspan x="0" y="0">Öğrenci Yoklama Durumu</tspan></text>
+    <text id="Bu_Haftanın_Gelir_Gider_Grafiği" data-name="Bu Haftanın Gelir/Gider Grafiği" class="cls-39" transform="translate(52 550)"><tspan x="0" y="0">Bu Haftanın Gelir/Gider Grafiği</tspan></text>
+    <text id="_13_Ocak_Pts" data-name="13 Ocak, Pts" class="cls-40" transform="translate(52 919)"><tspan x="0" y="0">13 Ocak, Pts</tspan></text>
+    <text id="_14_Ocak_Sal" data-name="14 Ocak, Sal" class="cls-40" transform="translate(224 919)"><tspan x="0" y="0">14 Ocak, Sal</tspan></text>
+    <text id="_15_Ocak_Çar" data-name="15 Ocak, Çar" class="cls-40" transform="translate(395 919)"><tspan x="0" y="0">15 Ocak, Çar</tspan></text>
+    <text id="_16_Ocak_Per" data-name="16 Ocak, Per" class="cls-40" transform="translate(568 919)"><tspan x="0" y="0">16 Ocak, Per</tspan></text>
+    <text id="_17_Ocak_Cum" data-name="17 Ocak, Cum" class="cls-40" transform="translate(741 919)"><tspan x="0" y="0">17 Ocak, Cum</tspan></text>
+    <text id="_18_Ocak_Cts" data-name="18 Ocak, Cts" class="cls-40" transform="translate(924 919)"><tspan x="0" y="0">18 Ocak, Cts</tspan></text>
+    <text id="_19_Ocak_Paz" data-name="19 Ocak, Paz" class="cls-40" transform="translate(1095 919)"><tspan x="0" y="0">19 Ocak, Paz</tspan></text>
+    <g id="Group_771" data-name="Group 771" transform="translate(33 223)">
+      <line id="Line_108" data-name="Line 108" class="cls-41" x2="1144" transform="translate(20 554)"/>
+      <line id="Line_109" data-name="Line 109" class="cls-41" x2="1144" transform="translate(20 504)"/>
+      <line id="Line_110" data-name="Line 110" class="cls-41" x2="1144" transform="translate(20 454)"/>
+      <line id="Line_111" data-name="Line 111" class="cls-41" x2="1144" transform="translate(19 404)"/>
+      <line id="Line_112" data-name="Line 112" class="cls-41" x2="1144" transform="translate(19 354)"/>
+      <line id="Line_115" data-name="Line 115" class="cls-41" x2="68" transform="translate(20 554)"/>
+      <line id="Line_107" data-name="Line 107" class="cls-41" x2="1144" transform="translate(20 604)"/>
+      <line id="Line_106" data-name="Line 106" class="cls-41" x2="1144" transform="translate(20 655)"/>
+      <line id="Line_118" data-name="Line 118" class="cls-41" x2="35" transform="translate(20 504)"/>
+    </g>
+    <g id="Group_770" data-name="Group 770" transform="translate(35.874 39.123)">
+      <path id="Path_1228" data-name="Path 1228" class="cls-42" d="M3745.589,4453.1s111.506-172.184,256.9-171.806,204.491,148.028,324.688,173.32,253.215-149.747,409.9-149.674S4953.913,4454.9,4953.913,4454.9" transform="translate(-3752.786 -3616.259)"/>
+      <path id="Path_1229" data-name="Path 1229" class="cls-43" d="M0,1S117.141,208.995,249.134,208.747,369.718-1.6,527.976.01,741.07,334.366,889.3,294.867,1206.913,1,1206.913,1" transform="translate(1185.913 839.644) rotate(180)"/>
+    </g>
+    <g id="Group_769" data-name="Group 769" transform="translate(27 178)">
+      <g class="cls-83" transform="matrix(1, 0, 0, 1, -27, -178)">
+        <rect id="Rectangle_650-3" data-name="Rectangle 650" class="cls-3" width="190" height="80" rx="5" transform="translate(87 715)"/>
+      </g>
+      <text id="GİDER" class="cls-44" transform="translate(130 569)"><tspan x="0" y="0">GİDER</tspan></text>
+      <text id="_-500_00_" data-name="-500,00₺" class="cls-45" transform="translate(130 596)"><tspan x="0" y="0">-500,00₺</tspan></text>
+      <g id="Ellipse_73" data-name="Ellipse 73" class="cls-46" transform="translate(80 557)">
+        <circle class="cls-79" cx="20" cy="20" r="20"/>
+        <circle class="cls-80" cx="20" cy="20" r="19.5"/>
+      </g>
+      <g id="Mask_Group_44" data-name="Mask Group 44" class="cls-47" transform="translate(238.614 592.992) rotate(135)">
+        <g id="arrow-left" transform="translate(78.513 101.513)">
+          <line id="Line_29" data-name="Line 29" class="cls-48" x1="14.975" transform="translate(0 7.487)"/>
+          <path id="Path_21" data-name="Path 21" class="cls-48" d="M14.915,22.4,7.428,14.915l7.487-7.487" transform="translate(-7.428 -7.428)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_768" data-name="Group 768" transform="translate(896 78)">
+      <g class="cls-82" transform="matrix(1, 0, 0, 1, -896, -78)">
+        <rect id="Rectangle_650-4" data-name="Rectangle 650" class="cls-3" width="190" height="80" rx="5" transform="translate(956 615)"/>
+      </g>
+      <text id="GELİR" class="cls-44" transform="translate(130 569)"><tspan x="0" y="0">GELİR</tspan></text>
+      <text id="_5.000_00_" data-name="5.000,00₺" class="cls-45" transform="translate(130 596)"><tspan x="0" y="0">5.000,00₺</tspan></text>
+      <g id="Ellipse_73-2" data-name="Ellipse 73" class="cls-49" transform="translate(80 557)">
+        <circle class="cls-79" cx="20" cy="20" r="20"/>
+        <circle class="cls-80" cx="20" cy="20" r="19.5"/>
+      </g>
+      <g id="Mask_Group_44-2" data-name="Mask Group 44" class="cls-47" transform="translate(-38.158 560.464) rotate(-45)">
+        <g id="arrow-left-2" data-name="arrow-left" transform="translate(78.513 101.513)">
+          <line id="Line_29-2" data-name="Line 29" class="cls-50" x1="14.975" transform="translate(0 7.487)"/>
+          <path id="Path_21-2" data-name="Path 21" class="cls-50" d="M14.915,22.4,7.428,14.915l7.487-7.487" transform="translate(-7.428 -7.428)"/>
+        </g>
+      </g>
+    </g>
+    <line id="Line_180" data-name="Line 180" class="cls-51" y2="301" transform="translate(447 572.5)"/>
+    <g id="Group_767" data-name="Group 767" transform="translate(-197 242)">
+      <rect id="Rectangle_654" data-name="Rectangle 654" class="cls-52" width="150" height="80" rx="5" transform="translate(478 336)"/>
+      <text id="_15_Ocak_Çar-2" data-name="15 Ocak, Çar" class="cls-53" transform="translate(488 362)"><tspan x="0" y="0">15 Ocak, Çar</tspan></text>
+      <text id="Gelir:_5.000_00_" data-name="Gelir: 5.000,00 ₺" class="cls-54" transform="translate(505 383)"><tspan x="0" y="0">Gelir:</tspan><tspan class="cls-55" y="0" xml:space="preserve"> 5.000,00 ₺</tspan></text>
+      <text id="Gider:_500_00_" data-name="Gider: 500,00 ₺" class="cls-54" transform="translate(505 400)"><tspan x="0" y="0">Gider: </tspan><tspan class="cls-55" y="0">500,00 ₺</tspan></text>
+      <g id="Ellipse_74" data-name="Ellipse 74" class="cls-49" transform="translate(488 373)">
+        <circle class="cls-79" cx="6" cy="6" r="6"/>
+        <circle class="cls-80" cx="6" cy="6" r="5.5"/>
+      </g>
+      <g id="Ellipse_75" data-name="Ellipse 75" class="cls-56" transform="translate(488 390)">
+        <circle class="cls-79" cx="6" cy="6" r="6"/>
+        <circle class="cls-80" cx="6" cy="6" r="5.5"/>
+      </g>
+    </g>
+    <rect id="Rectangle_885" data-name="Rectangle 885" class="cls-57" width="48" height="69" transform="translate(-16 842)"/>
+    <rect id="Rectangle_886" data-name="Rectangle 886" class="cls-57" width="48" height="69" transform="translate(1223 825)"/>
+    <g id="Rectangle_888" data-name="Rectangle 888" class="cls-12" transform="translate(420 990)">
+      <rect class="cls-79" width="400" height="406" rx="5"/>
+      <rect class="cls-80" x="0.5" y="0.5" width="399" height="405" rx="4.5"/>
+    </g>
+    <g class="cls-81" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <line id="Line_181-2" data-name="Line 181" class="cls-15" x2="400" transform="translate(420 1089)"/>
+    </g>
+    <text id="Öğrenciler" class="cls-58" transform="translate(440 1120)"><tspan x="0" y="0">Öğrenciler</tspan></text>
+    <text id="Personeller" class="cls-58" transform="translate(440 1308)"><tspan x="0" y="0">Personeller</tspan></text>
+    <g id="Group_774" data-name="Group 774" transform="translate(370 1073)">
+      <circle id="Ellipse_15-2" data-name="Ellipse 15" class="cls-17" cx="20" cy="20" r="20" transform="translate(70 84)"/>
+      <text id="FU-2" data-name="FU" class="cls-18" transform="translate(82 109)"><tspan x="0" y="0">FU</tspan></text>
+    </g>
+    <g id="Group_773" data-name="Group 773" transform="translate(420 992)">
+      <rect id="Rectangle_608" data-name="Rectangle 608" class="cls-2" width="73" height="10" rx="5" transform="translate(70 238)"/>
+      <g id="Group_31-2" data-name="Group 31" transform="translate(-50 151)">
+        <circle id="Ellipse_15-3" data-name="Ellipse 15" class="cls-16" cx="20" cy="20" r="20" transform="translate(70 84)"/>
+      </g>
+      <rect id="Rectangle_633" data-name="Rectangle 633" class="cls-16" width="73" height="10" rx="5" transform="translate(70 253)"/>
+      <rect id="Rectangle_670" data-name="Rectangle 670" class="cls-16" width="103" height="10" rx="5" transform="translate(88 268)"/>
+    </g>
+    <g id="Group_772" data-name="Group 772" transform="translate(420 916)">
+      <rect id="Rectangle_743" data-name="Rectangle 743" class="cls-2" width="73" height="10" rx="5" transform="translate(70 420)"/>
+      <g id="Group_746" data-name="Group 746" transform="translate(0 182)">
+        <g id="Group_31-3" data-name="Group 31" transform="translate(-50 151)">
+          <circle id="Ellipse_15-4" data-name="Ellipse 15" class="cls-16" cx="20" cy="20" r="20" transform="translate(70 84)"/>
+        </g>
+        <rect id="Rectangle_633-2" data-name="Rectangle 633" class="cls-16" width="73" height="10" rx="5" transform="translate(70 253)"/>
+        <rect id="Rectangle_670-2" data-name="Rectangle 670" class="cls-16" width="103" height="10" rx="5" transform="translate(88 268)"/>
+      </g>
+    </g>
+    <text id="Doğum_Günü" data-name="Doğum Günü" class="cls-13" transform="translate(440 1034)"><tspan x="0" y="0">Doğum Günü</tspan></text>
+    <text id="Mutlu_Yıllar" data-name="Mutlu Yıllar" class="cls-14" transform="translate(440 1064)"><tspan x="0" y="0">Mutlu Yıllar</tspan></text>
+    <g id="Mask_Group_195" data-name="Mask Group 195" class="cls-59" transform="translate(459 996)">
+      <path id="birthday-cake-solid" class="cls-5" d="M43.75,37.5c-2.736,0-3.053-3.125-7.275-3.125-4.241,0-4.573,3.125-7.3,3.125-2.7,0-3.072-3.125-7.3-3.125-4.184,0-4.611,3.125-7.275,3.125-2.749,0-3.047-3.125-7.3-3.125S2.744,37.5,0,37.5V29.688A4.689,4.689,0,0,1,4.688,25H6.25V10.938H12.5V25h6.25V10.938H25V25h6.25V10.938H37.5V25h1.563a4.689,4.689,0,0,1,4.688,4.688Zm0,12.5H0V40.625c4.234,0,4.567-3.125,7.3-3.125s3.052,3.125,7.3,3.125c4.184,0,4.611-3.125,7.275-3.125,2.749,0,3.047,3.125,7.3,3.125,4.234,0,4.567-3.125,7.3-3.125,2.684,0,3.052,3.125,7.275,3.125ZM9.375,9.375A3.115,3.115,0,0,1,6.25,6.25C6.25,3.223,9.375,4,9.375,0,10.547,0,12.5,2.881,12.5,5.469S11.108,9.375,9.375,9.375Zm12.5,0A3.115,3.115,0,0,1,18.75,6.25C18.75,3.223,21.875,4,21.875,0,23.047,0,25,2.881,25,5.469S23.608,9.375,21.875,9.375Zm12.5,0A3.115,3.115,0,0,1,31.25,6.25C31.25,3.223,34.375,4,34.375,0,35.547,0,37.5,2.881,37.5,5.469S36.108,9.375,34.375,9.375Z" transform="translate(294.125 20)"/>
+    </g>
+    <g id="Mask_Group_194" data-name="Mask Group 194" class="cls-60" transform="translate(361 880)">
+      <path id="gift-solid" class="cls-6" d="M.813,11.375a.812.812,0,0,0,.813.813H5.688V8.125H.813Zm6.5.813h4.063a.812.812,0,0,0,.813-.812V8.125H7.313Zm4.875-8.125H11.119a2.214,2.214,0,0,0,.256-1.016A2.238,2.238,0,0,0,9.141.813c-1.056,0-1.739.541-2.615,1.734C5.649,1.353,4.966.813,3.91.813A2.238,2.238,0,0,0,1.676,3.047a2.183,2.183,0,0,0,.256,1.016H.813A.812.812,0,0,0,0,4.875V6.906a.407.407,0,0,0,.406.406H12.594A.407.407,0,0,0,13,6.906V4.875A.812.812,0,0,0,12.188,4.063Zm-8.28,0a1.016,1.016,0,0,1,0-2.031c.505,0,.879.084,2.186,2.031Zm5.233,0H6.954C8.26,2.12,8.623,2.031,9.141,2.031a1.016,1.016,0,0,1,0,2.031Z" transform="translate(129 314)"/>
+    </g>
+    <g id="Mask_Group_193" data-name="Mask Group 193" class="cls-60" transform="translate(361 944)">
+      <path id="gift-solid-2" data-name="gift-solid" class="cls-6" d="M.813,11.375a.812.812,0,0,0,.813.813H5.688V8.125H.813Zm6.5.813h4.063a.812.812,0,0,0,.813-.812V8.125H7.313Zm4.875-8.125H11.119a2.214,2.214,0,0,0,.256-1.016A2.238,2.238,0,0,0,9.141.813c-1.056,0-1.739.541-2.615,1.734C5.649,1.353,4.966.813,3.91.813A2.238,2.238,0,0,0,1.676,3.047a2.183,2.183,0,0,0,.256,1.016H.813A.812.812,0,0,0,0,4.875V6.906a.407.407,0,0,0,.406.406H12.594A.407.407,0,0,0,13,6.906V4.875A.812.812,0,0,0,12.188,4.063Zm-8.28,0a1.016,1.016,0,0,1,0-2.031c.505,0,.879.084,2.186,2.031Zm5.233,0H6.954C8.26,2.12,8.623,2.031,9.141,2.031a1.016,1.016,0,0,1,0,2.031Z" transform="translate(129 314)"/>
+    </g>
+    <g id="Mask_Group_192" data-name="Mask Group 192" class="cls-60" transform="translate(361 1050)">
+      <path id="gift-solid-3" data-name="gift-solid" class="cls-6" d="M.813,11.375a.812.812,0,0,0,.813.813H5.688V8.125H.813Zm6.5.813h4.063a.812.812,0,0,0,.813-.812V8.125H7.313Zm4.875-8.125H11.119a2.214,2.214,0,0,0,.256-1.016A2.238,2.238,0,0,0,9.141.813c-1.056,0-1.739.541-2.615,1.734C5.649,1.353,4.966.813,3.91.813A2.238,2.238,0,0,0,1.676,3.047a2.183,2.183,0,0,0,.256,1.016H.813A.812.812,0,0,0,0,4.875V6.906a.407.407,0,0,0,.406.406H12.594A.407.407,0,0,0,13,6.906V4.875A.812.812,0,0,0,12.188,4.063Zm-8.28,0a1.016,1.016,0,0,1,0-2.031c.505,0,.879.084,2.186,2.031Zm5.233,0H6.954C8.26,2.12,8.623,2.031,9.141,2.031a1.016,1.016,0,0,1,0,2.031Z" transform="translate(129 314)"/>
+    </g>
+    <text id="Fatih_Uzun-2" data-name="Fatih Uzun" class="cls-19" transform="translate(490 1161)"><tspan x="0" y="0">Fatih Uzun</tspan></text>
+    <text id="_14_Ocak_Salı" data-name="14 Ocak, Salı" class="cls-20" transform="translate(490 1183)"><tspan x="0" y="0">14 Ocak, Salı</tspan></text>
+    <text id="_25._Yaşını_Kutlarız_" data-name="25. Yaşını Kutlarız!" class="cls-20" transform="translate(508 1205)"><tspan x="0" y="0">25. Yaşını Kutlarız!</tspan></text>
+    <g id="Mask_Group_191" data-name="Mask Group 191" class="cls-27" transform="translate(628 896)">
+      <g id="more-vertical-5" data-name="more-vertical" transform="translate(154.5 250.5)">
+        <circle id="Ellipse_103" data-name="Ellipse 103" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 9.167)"/>
+        <circle id="Ellipse_104" data-name="Ellipse 104" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 3.333)"/>
+        <circle id="Ellipse_105" data-name="Ellipse 105" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 15)"/>
+      </g>
+    </g>
+    <g id="Mask_Group_200" data-name="Mask Group 200" class="cls-27" transform="translate(628 974)">
+      <g id="more-vertical-6" data-name="more-vertical" transform="translate(154.5 250.5)">
+        <circle id="Ellipse_115" data-name="Ellipse 115" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 9.167)"/>
+        <circle id="Ellipse_116" data-name="Ellipse 116" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 3.333)"/>
+        <circle id="Ellipse_117" data-name="Ellipse 117" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 15)"/>
+      </g>
+    </g>
+    <g id="Mask_Group_190" data-name="Mask Group 190" class="cls-27" transform="translate(626 1081)">
+      <g id="more-vertical-7" data-name="more-vertical" transform="translate(154.5 250.5)">
+        <circle id="Ellipse_100" data-name="Ellipse 100" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 9.167)"/>
+        <circle id="Ellipse_101" data-name="Ellipse 101" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 3.333)"/>
+        <circle id="Ellipse_102" data-name="Ellipse 102" class="cls-28" cx="0.833" cy="0.833" r="0.833" transform="translate(9.167 15)"/>
+      </g>
+    </g>
+    <g id="Rectangle_901" data-name="Rectangle 901" class="cls-12" transform="translate(840 990)">
+      <rect class="cls-79" width="375" height="397" rx="5"/>
+      <rect class="cls-80" x="0.5" y="0.5" width="374" height="396" rx="4.5"/>
+    </g>
+    <g id="Grup_Red_1-2" data-name="Grup Red 1" transform="translate(790 889)">
+      <text id="Scoutive" class="cls-13" transform="translate(70 145)"><tspan x="0" y="0">Scoutive</tspan></text>
+      <text id="Grubu_Saha-2_de_antremanda" data-name="Grubu Saha-2’de antremanda" class="cls-61" transform="translate(71 170)"><tspan x="0" y="0">Grubu </tspan><tspan class="cls-25" y="0">Saha-2’de</tspan><tspan y="0" xml:space="preserve"> antremanda</tspan></text>
+    </g>
+    <rect id="Rectangle_912" data-name="Rectangle 912" class="cls-25" width="75" height="20" rx="3" transform="translate(1120 1084)"/>
+    <g id="Mask_Group_196" data-name="Mask Group 196" class="cls-62" transform="translate(848 901)">
+      <path id="running-solid" class="cls-7" d="M26.564,9.375a4.688,4.688,0,1,0-4.688-4.688A4.688,4.688,0,0,0,26.564,9.375ZM11.1,31,9.658,34.375H3.125a3.125,3.125,0,0,0,0,6.25h7.564A4.678,4.678,0,0,0,15,37.785l.858-2-1.042-.615A9.3,9.3,0,0,1,11.1,31Zm26.4-9.129H33.2l-2.545-5.2A9.371,9.371,0,0,0,24.623,11.7L17.681,9.635a9.336,9.336,0,0,0-7.895,1.674l-3.874,2.97a3.125,3.125,0,1,0,3.8,4.959l3.876-2.97a3.041,3.041,0,0,1,2.468-.6l1.436.427L13.836,24.63A6.267,6.267,0,0,0,16.4,32.473l8.3,4.9L22.021,45.94a3.125,3.125,0,1,0,5.964,1.867l3.09-9.87a4.707,4.707,0,0,0-2.113-5.312L22.981,29.1l3.058-7.645,1.98,4.046a4.717,4.717,0,0,0,4.21,2.626H37.5a3.125,3.125,0,1,0,0-6.249Z" transform="translate(301.687 102)"/>
+    </g>
+    <g id="Grup_Red_1-3" data-name="Grup Red 1" transform="translate(840 963)">
+      <g id="Group_31-4" data-name="Group 31" transform="translate(-50 38)">
+        <circle id="Ellipse_15-5" data-name="Ellipse 15" class="cls-17" cx="20" cy="20" r="20" transform="translate(70 84)"/>
+        <text id="FU-3" data-name="FU" class="cls-18" transform="translate(82 109)"><tspan x="0" y="0">FU</tspan></text>
+      </g>
+      <text id="Fatih_Uzun-3" data-name="Fatih Uzun" class="cls-19" transform="translate(70 136)"><tspan x="0" y="0">Fatih Uzun</tspan></text>
+      <text id="Sorumlu_Antrenör" data-name="Sorumlu Antrenör" class="cls-20" transform="translate(70 158)"><tspan x="0" y="0">Sorumlu Antrenör</tspan></text>
+    </g>
+    <text id="_10:00_23:00" data-name="10:00 — 23:00" class="cls-22" transform="translate(1126 1098)"><tspan x="0" y="0">10:00 — 23:00</tspan></text>
+    <g id="Rectangle_910" data-name="Rectangle 910" class="cls-63" transform="translate(868 1145)">
+      <rect class="cls-79" width="320" height="45" rx="5"/>
+      <rect class="cls-80" x="0.5" y="0.5" width="319" height="44" rx="4.5"/>
+    </g>
+    <text id="Antreman_da_Olan_Öğrenciler" data-name="Antreman’da Olan Öğrenciler" class="cls-20" transform="translate(947 1172)"><tspan x="0" y="0">Antreman’da Olan Öğrenciler</tspan></text>
+    <g id="Group_778" data-name="Group 778" transform="translate(790 1126)">
+      <circle id="Ellipse_15-6" data-name="Ellipse 15" class="cls-16" cx="20" cy="20" r="20" transform="translate(70 84)"/>
+    </g>
+    <g id="Group_777" data-name="Group 777" transform="translate(790 1186)">
+      <circle id="Ellipse_15-7" data-name="Ellipse 15" class="cls-16" cx="20" cy="20" r="20" transform="translate(70 84)"/>
+    </g>
+    <g id="Group_781" data-name="Group 781" transform="translate(790 1246)">
+      <circle id="Ellipse_15-8" data-name="Ellipse 15" class="cls-16" cx="20" cy="20" r="20" transform="translate(70 84)"/>
+    </g>
+    <g id="Group_776" data-name="Group 776" transform="translate(1002 1126)">
+      <circle id="Ellipse_15-9" data-name="Ellipse 15" class="cls-16" cx="20" cy="20" r="20" transform="translate(70 84)"/>
+    </g>
+    <g id="Group_775" data-name="Group 775" transform="translate(1002 1186)">
+      <circle id="Ellipse_15-10" data-name="Ellipse 15" class="cls-16" cx="20" cy="20" r="20" transform="translate(70 84)"/>
+    </g>
+    <g id="Group_780" data-name="Group 780" transform="translate(1002 1246)">
+      <circle id="Ellipse_15-11" data-name="Ellipse 15" class="cls-16" cx="20" cy="20" r="20" transform="translate(70 84)"/>
+    </g>
+    <rect id="Rectangle_909" data-name="Rectangle 909" class="cls-2" width="73" height="10" rx="5" transform="translate(910 1213)"/>
+    <rect id="Rectangle_908" data-name="Rectangle 908" class="cls-2" width="73" height="10" rx="5" transform="translate(910 1274)"/>
+    <rect id="Rectangle_926" data-name="Rectangle 926" class="cls-2" width="73" height="10" rx="5" transform="translate(910 1334)"/>
+    <rect id="Rectangle_907" data-name="Rectangle 907" class="cls-2" width="73" height="10" rx="5" transform="translate(1122 1203)"/>
+    <rect id="Rectangle_906" data-name="Rectangle 906" class="cls-2" width="73" height="10" rx="5" transform="translate(1122 1264)"/>
+    <rect id="Rectangle_927" data-name="Rectangle 927" class="cls-2" width="73" height="10" rx="5" transform="translate(1122 1324)"/>
+    <rect id="Rectangle_905" data-name="Rectangle 905" class="cls-1" width="40" height="10" rx="5" transform="translate(910 1237)"/>
+    <rect id="Rectangle_904" data-name="Rectangle 904" class="cls-64" width="40" height="10" rx="5" transform="translate(910 1297)"/>
+    <rect id="Rectangle_928" data-name="Rectangle 928" class="cls-64" width="40" height="10" rx="5" transform="translate(910 1357)"/>
+    <rect id="Rectangle_903" data-name="Rectangle 903" class="cls-65" width="40" height="10" rx="5" transform="translate(1122 1227)"/>
+    <rect id="Rectangle_902" data-name="Rectangle 902" class="cls-66" width="40" height="10" rx="5" transform="translate(1122 1287)"/>
+    <rect id="Rectangle_925" data-name="Rectangle 925" class="cls-66" width="40" height="10" rx="5" transform="translate(1122 1347)"/>
+    <text id="Genel_Durum" data-name="Genel Durum" class="cls-39" transform="translate(32 174)"><tspan x="0" y="0">Genel Durum</tspan></text>
+    <g id="Component_1" data-name="Component 1">
+      <rect id="üstbarbg" class="cls-67" width="1245" height="65"/>
+      <g id="logo" transform="translate(30 21)">
+        <ellipse id="Ellipse_118" data-name="Ellipse 118" class="cls-35" cx="10" cy="9.971" rx="10" ry="9.971" transform="translate(0 2.021)"/>
+        <circle id="Ellipse_119" data-name="Ellipse 119" class="cls-35" cx="6" cy="6" r="6" transform="translate(4 6)"/>
+        <circle id="Ellipse_120" data-name="Ellipse 120" class="cls-35" cx="2" cy="2" r="2" transform="translate(8 10)"/>
+        <path id="Path_1239" data-name="Path 1239" class="cls-3" d="M189.22,104.033a10.914,10.914,0,0,1-4.13-.808,10.652,10.652,0,0,1-3.52-2.3l2.2-2.553a9.7,9.7,0,0,0,2.6,1.735,7.015,7.015,0,0,0,2.92.658,4.368,4.368,0,0,0,2.76-.748,2.391,2.391,0,0,0,.94-1.995,2.2,2.2,0,0,0-.25-1.1,2.425,2.425,0,0,0-.68-.788,6,6,0,0,0-1-.638c-.4-.19-.83-.389-1.31-.579l-2.92-1.267a9.129,9.129,0,0,1-1.54-.808,6.4,6.4,0,0,1-1.38-1.167,5.534,5.534,0,0,1-.83-5.984,5.907,5.907,0,0,1,1.48-1.9,6.865,6.865,0,0,1,2.25-1.267,9.242,9.242,0,0,1,6.44.279,9.112,9.112,0,0,1,3,1.995L194.33,87.2a9.583,9.583,0,0,0-2.14-1.327,6.114,6.114,0,0,0-2.46-.489,4.088,4.088,0,0,0-2.44.668,2.143,2.143,0,0,0-.91,1.825,1.991,1.991,0,0,0,.28,1.057,2.756,2.756,0,0,0,.75.778,6.115,6.115,0,0,0,1.08.608c.41.19.83.369,1.27.539l2.89,1.2a10.009,10.009,0,0,1,1.72.908,6.155,6.155,0,0,1,1.34,1.2,4.983,4.983,0,0,1,.89,1.566,5.911,5.911,0,0,1,.33,2.055,5.723,5.723,0,0,1-.52,2.434,5.9,5.9,0,0,1-1.51,1.995,7.2,7.2,0,0,1-2.4,1.356,9.4,9.4,0,0,1-3.28.469Z" transform="translate(-156 -81.039)"/>
+        <path id="Path_1240" data-name="Path 1240" class="cls-3" d="M206.91,104.08a8.22,8.22,0,0,1-3-.54,6.82,6.82,0,0,1-2.42-1.6,7.44,7.44,0,0,1-1.59-2.59,9.79,9.79,0,0,1-.58-3.49,8.94,8.94,0,0,1,.64-3.49,7.65,7.65,0,0,1,1.73-2.59,7.48,7.48,0,0,1,2.51-1.62,8.18,8.18,0,0,1,3-.56,6.25,6.25,0,0,1,2.64.51,8.93,8.93,0,0,1,2,1.25L210,91.76a6.549,6.549,0,0,0-1.27-.85,3.08,3.08,0,0,0-1.36-.3,3.86,3.86,0,0,0-3.1,1.42,6.74,6.74,0,0,0,0,7.62,3.73,3.73,0,0,0,3,1.42,3.83,3.83,0,0,0,1.74-.4,7.831,7.831,0,0,0,1.49-.94l1.5,2.43a7.9,7.9,0,0,1-5.12,1.92Z" transform="translate(-156 -81.096)"/>
+        <path id="Path_1241" data-name="Path 1241" class="cls-3" d="M220.8,104.08a7.44,7.44,0,0,1-2.81-.54,7,7,0,0,1-2.39-1.6,7.88,7.88,0,0,1-1.6-2.59,10.45,10.45,0,0,1,0-7,7.77,7.77,0,0,1,1.65-2.59,7.18,7.18,0,0,1,2.35-1.6,7.26,7.26,0,0,1,2.81-.56,7.4,7.4,0,0,1,2.83.56A7.08,7.08,0,0,1,226,89.78a8.1,8.1,0,0,1,1.65,2.59,10.13,10.13,0,0,1,0,7,8.21,8.21,0,0,1-1.65,2.59,6.89,6.89,0,0,1-2.39,1.6A7.58,7.58,0,0,1,220.8,104.08Zm0-3a3.14,3.14,0,0,0,2.72-1.42,6.52,6.52,0,0,0,1-3.79,6.61,6.61,0,0,0-1-3.83,3.16,3.16,0,0,0-2.72-1.42A3.11,3.11,0,0,0,218.1,92a6.69,6.69,0,0,0-1,3.83,6.59,6.59,0,0,0,1,3.79,3.09,3.09,0,0,0,2.7,1.45Z" transform="translate(-156 -81.096)"/>
+        <path id="Path_1242" data-name="Path 1242" class="cls-3" d="M236.61,104.08a4.22,4.22,0,0,1-3.68-1.61,7.9,7.9,0,0,1-1.15-4.63V88h3.68v9.37a4.92,4.92,0,0,0,.57,2.75,2.13,2.13,0,0,0,1.86.8,3.27,3.27,0,0,0,1.81-.51,7.4,7.4,0,0,0,1.68-1.66V88h3.68v15.7h-3l-.29-2.31h-.09a9.22,9.22,0,0,1-2.23,2,5.3,5.3,0,0,1-2.84.69Z" transform="translate(-156 -81.096)"/>
+        <path id="Path_1243" data-name="Path 1243" class="cls-3" d="M255.27,104.023a5.945,5.945,0,0,1-2.33-.409,4,4,0,0,1-1.53-1.167,4.88,4.88,0,0,1-.87-1.785,9.239,9.239,0,0,1-.27-2.313V90.88H248V88.138l2.43-.16.45-4.278H254v4.288h4V90.88h-4v7.469c0,1.825.74,2.742,2.21,2.742a3.59,3.59,0,0,0,.85-.1,4.318,4.318,0,0,0,.79-.249l.63,2.712a12.4,12.4,0,0,1-1.45.4,8.876,8.876,0,0,1-1.76.17Z" transform="translate(-156 -81.039)"/>
+        <path id="Path_1244" data-name="Path 1244" class="cls-3" d="M263.14,85.219a2.394,2.394,0,0,1-1.64-.569,2.1,2.1,0,0,1,0-3.022,2.363,2.363,0,0,1,1.64-.589,2.334,2.334,0,0,1,1.63.589,1.993,1.993,0,0,1,.64,1.516,1.933,1.933,0,0,1-.64,1.506,2.374,2.374,0,0,1-1.63.569Zm-1.86,18.423V87.982H265v15.66Z" transform="translate(-156 -81.039)"/>
+        <path id="Path_1245" data-name="Path 1245" class="cls-3" d="M273.18,103.7,267.71,88h3.75L274,96.15c.22.76.43,1.54.66,2.33s.44,1.59.65,2.4h.13c.24-.81.46-1.61.67-2.4s.44-1.57.68-2.33L279.23,88h3.56l-5.35,15.71Z" transform="translate(-156 -81.096)"/>
+        <path id="Path_1246" data-name="Path 1246" class="cls-3" d="M292,104.08a8,8,0,0,1-3-.56,7.15,7.15,0,0,1-2.46-1.61,7.47,7.47,0,0,1-1.65-2.58,9.6,9.6,0,0,1-.59-3.47,9.27,9.27,0,0,1,.61-3.46,7.85,7.85,0,0,1,1.61-2.59,7.18,7.18,0,0,1,2.32-1.63,6.55,6.55,0,0,1,2.69-.58,6.73,6.73,0,0,1,2.82.55,5.51,5.51,0,0,1,2,1.53,6.84,6.84,0,0,1,1.23,2.37,10.279,10.279,0,0,1,.42,3v1a7,7,0,0,1-.11.77h-10a5.09,5.09,0,0,0,1.49,3.25,4.44,4.44,0,0,0,3.15,1.13,5.88,5.88,0,0,0,1.91-.3,8.209,8.209,0,0,0,1.74-.85l1.25,2.31a11.36,11.36,0,0,1-2.5,1.21,8.62,8.62,0,0,1-2.93.51Zm-4.19-9.73h7a4.67,4.67,0,0,0-.79-2.86,2.83,2.83,0,0,0-2.41-1,3.51,3.51,0,0,0-2.47,1,4.71,4.71,0,0,0-1.3,2.86Z" transform="translate(-156 -81.096)"/>
+      </g>
+      <g id="search" transform="translate(212 23)">
+        <circle id="Ellipse_121" data-name="Ellipse 121" class="cls-68" cx="9" cy="9" r="9"/>
+        <line id="Line_183" data-name="Line 183" class="cls-68" x1="4.35" y1="4.35" transform="translate(15.65 15.65)"/>
+      </g>
+      <line id="Line_184" data-name="Line 184" class="cls-69" y2="45" transform="translate(192 10)"/>
+      <g id="Mask_Group_201" data-name="Mask Group 201" class="cls-70" transform="translate(1034.377 29)">
+        <path id="bell-regular" class="cls-8" d="M12.873,10.614c-.566-.608-1.625-1.523-1.625-4.52A4.626,4.626,0,0,0,7.5,1.548V.938a.937.937,0,1,0-1.874,0v.611A4.626,4.626,0,0,0,1.877,6.094c0,3-1.059,3.912-1.625,4.52A.915.915,0,0,0,0,11.25a.938.938,0,0,0,.94.938H12.185a.938.938,0,0,0,.94-.937A.915.915,0,0,0,12.873,10.614Zm-10.894.167a7.336,7.336,0,0,0,1.3-4.671c0-.006,0-.011,0-.017a3.281,3.281,0,0,1,6.563,0c0,.006,0,.011,0,.017a7.335,7.335,0,0,0,1.3,4.671ZM6.562,15a1.875,1.875,0,0,0,1.874-1.875H4.688A1.875,1.875,0,0,0,6.562,15Z" transform="translate(0.938 -3)"/>
+      </g>
+      <g id="Group_783" data-name="Group 783" transform="translate(1121 15)">
+        <text id="Scoutive_Demo" data-name="Scoutive Demo" class="cls-71" transform="translate(0 15)"><tspan x="0" y="0">Scoutive Demo</tspan></text>
+        <text id="Yönetici" class="cls-61" transform="translate(0 32)"><tspan x="0" y="0">Yönetici</tspan></text>
+      </g>
+      <rect id="saatbg" class="cls-2" width="60" height="18" rx="2" transform="translate(958 24)"/>
+      <text id="_18:00:25" data-name="18:00:25" class="cls-54" transform="translate(967 37)"><tspan x="0" y="0">18:00:25</tspan></text>
+      <circle id="Ellipse_136" data-name="Ellipse 136" class="cls-2" cx="16" cy="16" r="16" transform="translate(1079 17)"/>
+      <rect id="menübg" class="cls-3" width="1245" height="55" transform="translate(0 65)"/>
+      <g id="AnasayfaIcon" class="cls-72" transform="translate(30 83)">
+        <path id="Home" class="cls-9" d="M9.734,5.259l-6.4,5.272v5.69a.556.556,0,0,0,.556.556l3.891-.01a.556.556,0,0,0,.553-.556V12.888a.556.556,0,0,1,.556-.556h2.222a.556.556,0,0,1,.556.556v3.321a.556.556,0,0,0,.556.557l3.889.011a.556.556,0,0,0,.556-.556V10.527l-6.4-5.268A.423.423,0,0,0,9.734,5.259ZM19.846,8.842l-2.9-2.393V1.641a.417.417,0,0,0-.417-.417H14.582a.417.417,0,0,0-.417.417V4.162L11.057,1.6a1.667,1.667,0,0,0-2.118,0L.151,8.842A.417.417,0,0,0,.1,9.429L.98,10.505a.417.417,0,0,0,.587.057L9.734,3.835a.423.423,0,0,1,.531,0l8.167,6.727a.417.417,0,0,0,.587-.056L19.9,9.43a.417.417,0,0,0-.059-.588Z" transform="translate(0.001 1)"/>
+      </g>
+      <text id="Anasayfa" class="cls-73" transform="translate(60 98.939)"><tspan x="0" y="0">Anasayfa</tspan></text>
+      <text id="Kişiler" class="cls-74" transform="translate(171 98)"><tspan x="0" y="0">Kişiler</tspan></text>
+      <g id="Mask_Group_202" data-name="Mask Group 202" class="cls-75" transform="translate(141 83)">
+        <path id="user-friends-solid" class="cls-10" d="M6,8.25a3.5,3.5,0,1,0-3.5-3.5A3.5,3.5,0,0,0,6,8.25Zm2.4,1H8.141a4.832,4.832,0,0,1-4.281,0H3.6A3.6,3.6,0,0,0,0,12.85v.9a1.5,1.5,0,0,0,1.5,1.5h9a1.5,1.5,0,0,0,1.5-1.5v-.9A3.6,3.6,0,0,0,8.4,9.25Zm6.6-1a3,3,0,1,0-3-3A3,3,0,0,0,15,8.25Zm1.5,1h-.119a3.941,3.941,0,0,1-2.762,0H13.5a3.471,3.471,0,0,0-1.741.481A4.573,4.573,0,0,1,13,12.85v1.2c0,.069-.016.134-.019.2H18.5a1.5,1.5,0,0,0,1.5-1.5A3.5,3.5,0,0,0,16.5,9.25Z" transform="translate(0 1.75)"/>
+      </g>
+      <g id="Öğrenciler-2" data-name="Öğrenciler" class="cls-76" transform="translate(235 85)">
+        <path id="user-graduate-solid" class="cls-10" d="M9.357,9.392,6.562,12.187,3.767,9.392A3.928,3.928,0,0,0,0,13.312v.281A1.407,1.407,0,0,0,1.406,15H11.718a1.407,1.407,0,0,0,1.406-1.406v-.281a3.929,3.929,0,0,0-3.767-3.92ZM.4,2.337l.187.044V4.092A.677.677,0,0,0,.56,5.264L.1,7.089c-.05.2.062.41.223.41H1.55c.161,0,.272-.208.223-.41L1.315,5.264a.677.677,0,0,0-.026-1.172V2.551l1.933.466a3.743,3.743,0,1,0,7.089,1.67,3.683,3.683,0,0,0-.41-1.67l2.821-.68a.466.466,0,0,0,0-.923L7.145.067a2.516,2.516,0,0,0-1.163,0L.4,1.412A.468.468,0,0,0,.4,2.337Z" transform="translate(0.889 0.001)"/>
+      </g>
+      <text id="Öğrenciler-3" data-name="Öğrenciler" class="cls-74" transform="translate(260 98)"><tspan x="0" y="0">Öğrenciler</tspan></text>
+      <g id="GruplarIcon" class="cls-76" transform="translate(349 85)">
+        <path id="th-solid" class="cls-10" d="M4.375,2.078V4.422a.7.7,0,0,1-.7.7H.7a.7.7,0,0,1-.7-.7V2.078a.7.7,0,0,1,.7-.7H3.672a.7.7,0,0,1,.7.7ZM9.688,9.109V6.766a.7.7,0,0,0-.7-.7H6.016a.7.7,0,0,0-.7.7V9.109a.7.7,0,0,0,.7.7H8.984A.7.7,0,0,0,9.688,9.109Zm.937-7.031V4.422a.7.7,0,0,0,.7.7H14.3a.7.7,0,0,0,.7-.7V2.078a.7.7,0,0,0-.7-.7H11.328A.7.7,0,0,0,10.625,2.078ZM9.688,4.422V2.078a.7.7,0,0,0-.7-.7H6.016a.7.7,0,0,0-.7.7V4.422a.7.7,0,0,0,.7.7H8.984A.7.7,0,0,0,9.688,4.422ZM3.672,6.063H.7a.7.7,0,0,0-.7.7V9.109a.7.7,0,0,0,.7.7H3.672a.7.7,0,0,0,.7-.7V6.766a.7.7,0,0,0-.7-.7ZM0,11.453V13.8a.7.7,0,0,0,.7.7H3.672a.7.7,0,0,0,.7-.7V11.453a.7.7,0,0,0-.7-.7H.7A.7.7,0,0,0,0,11.453ZM11.328,9.813H14.3a.7.7,0,0,0,.7-.7V6.766a.7.7,0,0,0-.7-.7H11.328a.7.7,0,0,0-.7.7V9.109A.7.7,0,0,0,11.328,9.813Zm0,4.687H14.3a.7.7,0,0,0,.7-.7V11.453a.7.7,0,0,0-.7-.7H11.328a.7.7,0,0,0-.7.7V13.8A.7.7,0,0,0,11.328,14.5ZM5.312,11.453V13.8a.7.7,0,0,0,.7.7H8.984a.7.7,0,0,0,.7-.7V11.453a.7.7,0,0,0-.7-.7H6.016A.7.7,0,0,0,5.312,11.453Z" transform="translate(-0.342 -0.438)"/>
+      </g>
+      <text id="Gruplar" class="cls-74" transform="translate(374 98)"><tspan x="0" y="0">Gruplar</tspan></text>
+      <text id="Yoklamalar" class="cls-74" transform="translate(472 98)"><tspan x="0" y="0">Yoklamalar</tspan></text>
+      <g id="Mask_Group_203" data-name="Mask Group 203" class="cls-76" transform="translate(447 85)">
+        <path id="clock-solid" class="cls-10" d="M7.742.242a7.5,7.5,0,1,0,7.5,7.5A7.5,7.5,0,0,0,7.742.242ZM9.469,10.83,6.8,8.891A.365.365,0,0,1,6.653,8.6V3.508a.364.364,0,0,1,.363-.363H8.468a.364.364,0,0,1,.363.363V7.672l1.92,1.4a.363.363,0,0,1,.079.508l-.853,1.173a.365.365,0,0,1-.508.079Z" transform="translate(0.091 -0.242)"/>
+      </g>
+      <text id="Antrenman" class="cls-74" transform="translate(594 98)"><tspan x="0" y="0">Antrenman</tspan></text>
+      <g id="Mask_Group_2" data-name="Mask Group 2" class="cls-77" transform="translate(567 85)">
+        <path id="running-solid-2" data-name="running-solid" class="cls-10" d="M8.906,2.774a1.488,1.488,0,0,0,1.572-1.387A1.488,1.488,0,0,0,8.906,0,1.488,1.488,0,0,0,7.334,1.387,1.488,1.488,0,0,0,8.906,2.774Zm-5.184,6.4-.485,1H1.048A.992.992,0,0,0,0,11.094a.992.992,0,0,0,1.048.925H3.584a1.586,1.586,0,0,0,1.444-.84l.288-.593L4.966,10.4A2.9,2.9,0,0,1,3.723,9.172Zm8.851-2.7H11.132l-.853-1.538A3.084,3.084,0,0,0,8.255,3.461L5.928,2.85a3.461,3.461,0,0,0-2.647.5l-1.3.879a.854.854,0,0,0-.194,1.3,1.143,1.143,0,0,0,1.469.171l1.3-.879a1.125,1.125,0,0,1,.827-.177l.481.126L4.639,7.286A1.748,1.748,0,0,0,5.5,9.606l2.782,1.449-.9,2.535a.909.909,0,0,0,.687,1.158,1.176,1.176,0,0,0,.314.043,1.043,1.043,0,0,0,1-.649l1.036-2.92A1.325,1.325,0,0,0,9.71,9.652L7.705,8.608,8.73,6.346l.664,1.2a1.613,1.613,0,0,0,1.412.777h1.768A.992.992,0,0,0,13.621,7.4a.992.992,0,0,0-1.048-.924Z" transform="translate(1.385 0.096)"/>
+      </g>
+      <text id="Kasa_ve_Banka" data-name="Kasa ve Banka" class="cls-74" transform="translate(714 98)"><tspan x="0" y="0">Kasa ve Banka</tspan></text>
+      <g id="Mask_Group_204" data-name="Mask Group 204" class="cls-76" transform="translate(689 85)">
+        <path id="coins-solid" class="cls-10" d="M0,11.874v1.251C0,14.159,2.52,15,5.625,15s5.625-.841,5.625-1.875V11.874a10.654,10.654,0,0,1-5.625,1.251A10.654,10.654,0,0,1,0,11.874ZM9.375,3.75C12.48,3.75,15,2.909,15,1.875S12.48,0,9.375,0,3.75.841,3.75,1.875,6.27,3.75,9.375,3.75ZM0,8.8v1.512c0,1.034,2.52,1.875,5.625,1.875s5.625-.841,5.625-1.875V8.8a9.435,9.435,0,0,1-5.625,1.512A9.435,9.435,0,0,1,0,8.8Zm12.188.322C13.866,8.8,15,8.194,15,7.5V6.249A7.194,7.194,0,0,1,12.188,7.26ZM5.625,4.688C2.52,4.688,0,5.736,0,7.031S2.52,9.375,5.625,9.375,11.25,8.326,11.25,7.031,8.73,4.688,5.625,4.688ZM12.05,6.337C13.808,6.021,15,5.4,15,4.688V3.437a9.538,9.538,0,0,1-4.708,1.225A3.281,3.281,0,0,1,12.05,6.337Z" transform="translate(0.054)"/>
+      </g>
+      <text id="Gelir_Gider" data-name="Gelir/Gider" class="cls-74" transform="translate(853 98)"><tspan x="0" y="0">Gelir/Gider</tspan></text>
+      <g id="Mask_Group_205" data-name="Mask Group 205" class="cls-76" transform="translate(828 85)">
+        <path id="calculator-solid" class="cls-10" d="M11.719,0H1.406A1.442,1.442,0,0,0,0,1.406V13.594A1.442,1.442,0,0,0,1.406,15H11.719a1.442,1.442,0,0,0,1.406-1.406V1.406A1.442,1.442,0,0,0,11.719,0ZM3.75,12.75a.4.4,0,0,1-.375.375H2.25a.4.4,0,0,1-.375-.375V11.625a.4.4,0,0,1,.375-.375H3.375a.4.4,0,0,1,.375.375ZM3.75,9a.4.4,0,0,1-.375.375H2.25A.4.4,0,0,1,1.875,9V7.875A.4.4,0,0,1,2.25,7.5H3.375a.4.4,0,0,1,.375.375ZM7.5,12.75a.4.4,0,0,1-.375.375H6a.4.4,0,0,1-.375-.375V11.625A.4.4,0,0,1,6,11.25H7.125a.4.4,0,0,1,.375.375ZM7.5,9a.4.4,0,0,1-.375.375H6A.4.4,0,0,1,5.625,9V7.875A.4.4,0,0,1,6,7.5H7.125a.4.4,0,0,1,.375.375Zm3.75,3.75a.4.4,0,0,1-.375.375H9.75a.4.4,0,0,1-.375-.375V7.875A.4.4,0,0,1,9.75,7.5h1.125a.4.4,0,0,1,.375.375Zm0-7.5a.4.4,0,0,1-.375.375H2.25a.4.4,0,0,1-.375-.375v-3a.4.4,0,0,1,.375-.375h8.625a.4.4,0,0,1,.375.375Z" transform="translate(1.146)"/>
+      </g>
+      <text id="İletişim_Merkezi" data-name="İletişim Merkezi" class="cls-74" transform="translate(971 98)"><tspan x="0" y="0">İletişim Merkezi</tspan></text>
+      <g id="Mask_Group_206" data-name="Mask Group 206" class="cls-76" transform="translate(946 85)">
+        <path id="satellite-dish-solid" class="cls-10" d="M8.949,13.552a.462.462,0,0,1-.088.733A6.015,6.015,0,0,1,.715,6.139a.465.465,0,0,1,.733-.088L4.87,9.474l.8-.8a.873.873,0,0,1-.047-.229.938.938,0,1,1,.938.938.852.852,0,0,1-.228-.047l-.8.8ZM15,8.879a.472.472,0,0,1-.469.5H13.59a.468.468,0,0,1-.466-.44A7.525,7.525,0,0,0,6.065,1.861a.464.464,0,0,1-.44-.466V.47A.471.471,0,0,1,6.124,0,9.4,9.4,0,0,1,15,8.879ZM12.186,8.87a.475.475,0,0,1-.472.507h-.944a.471.471,0,0,1-.466-.431A4.681,4.681,0,0,0,6.059,4.692a.467.467,0,0,1-.434-.466V3.285a.473.473,0,0,1,.507-.472A6.593,6.593,0,0,1,12.186,8.87Z" transform="translate(-0.293 0)"/>
+      </g>
+      <line id="Line_185" data-name="Line 185" class="cls-78" x2="84" transform="translate(32 120)"/>
+    </g>
+  </g>
+</svg>
