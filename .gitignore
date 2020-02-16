@@ -58,3 +58,4 @@ buck-out/
 
 # custom
 old_site/
+.vscode/
