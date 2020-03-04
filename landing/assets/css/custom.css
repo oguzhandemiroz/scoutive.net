@@ -4,10 +4,34 @@
     border-color: #4f4e96;
 }
 
-.sc_logo {
+.scoutive_logo {
     width: 150px;
     transition: 0.5s;
 }
+
+.bracket{
+    width: 100%;
+    border-top: 1px solid #f3f3f3;
+}
+
+.per-80 {
+    max-width: 800px;
+    margin-top: -5rem;
+}
+.hdr-text {
+    color: #fbedb7;
+    display: inline;
+}
+
+.footerScoutive {
+    margin-top: 50px;
+    background-color: #343a40;
+}
+
+.CopyrightScoutive {
+    background-color: #343a40;
+}
+
 header.masthead {
     padding-top: 5rem;
     padding-bottom: calc(10rem - 140px);
@@ -16,6 +40,27 @@ header.masthead {
     background-attachment: scroll;
     background-size: cover;
     background-color: #7dc4f6;
+}
+
+.md-form{
+    margin: 10px;
+}
+
+.border-r {
+    border-right: 1px solid #3f4348;
+}
+.border-t {
+    border-top: 1px solid #3f4348;
+}
+
+.sendMessageArea{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.footerMenu {
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
 }
 
 .headerImage {
@@ -29,7 +74,7 @@ header.masthead {
 }
 header.masthead h1 {
     font-family: Quicksand-Bold, Quicksand;
-    color: #ffffff;
+    color: #fff;
 }
 
 #mainNav.navbar-fixed {
@@ -53,8 +98,13 @@ header.masthead h1 {
     color: #7dc4f6;
 }
 
-#mainNav.navbar-fixed #logo {
+#mainNav.navbar-fixed #navbar_logo {
     width: 110px;
+}
+
+header.masthead p {
+    font-size: 20px;
+    color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -65,14 +115,13 @@ header.masthead h1 {
         padding-bottom: 0;
     }
 
-    header.masthead p {
-        font-size: 25px;
-        color: #ffffff;
+    .navbar-light .navbar-toggler-icon {
+        color: #212529;
     }
-}
 
-@media (min-width: 1200px) {
-    header.masthead h1 {
-        font-size: 2.5rem;
+    @media (min-width: 1200px) {
+        header.masthead h1 {
+            font-size: 2.5rem;
+        }
     }
 }

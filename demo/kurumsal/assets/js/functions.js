@@ -27,7 +27,7 @@ var INSPIRO = {},
         $header = $('#header'),
         $headerCurrentClasses = $header.attr('class'),
 
-        logo = $('#logo').find('.logo'),
+        logo = $('#navbar_logo').find('.logo'),
         logoImg = logo.find('img').attr('src'),
         logoDark = logo.attr('data-dark-logo'), //Main menu
         //mainmenuitems = $("#mainMenu > ul > li"),

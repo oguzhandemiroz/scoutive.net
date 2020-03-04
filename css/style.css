@@ -923,7 +923,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .ctn-preloader .loader .loader-section .bg {
-  background-color: #ffffff;
+  background-color: #fff;
   height: 100%;
   left: 0;
   width: 100%;
@@ -3786,7 +3786,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .payment_banner_content .agency_banner_btn_two {
-  color: #ffffff;
+  color: #fff;
   margin-left: 30px;
 }
 

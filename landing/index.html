@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
   <meta charset="UTF-8">
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./assets/css/bootstrap.css">
   <link rel="stylesheet" href="./assets/css/custom.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scoutive</title>
 </head>
@@ -17,8 +18,10 @@
   <header class="masthead">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="sc_logo" id="logo"
-            src="https://scoutive-others.s3.eu-central-1.amazonaws.com/sites/logo_white.svg" alt="Scoutive"></a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <img class="scoutive_logo" id="navbar_logo"
+            src="https://scoutive-others.s3.eu-central-1.amazonaws.com/sites/logo_white.svg" alt="Scoutive">
+        </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
           data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -47,24 +50,195 @@
       <div class="align-items-center justify-content-center text-center">
         <h1 class="font-weight-bold">Scoutive ile
           <!--TypeJs--->
-          <div style="color:#fbedb7; display: inline;">Bağlılığı Arttır</div>
+          <div class="hdr-text">Bağlılığı Arttır</div>
         </h1>
         <p class="mb-4 mt-5">Scoutive gelişmiş spor okulu yönetim platformudur.
           <p class="mb-5">Bu platform raporlama ve analiz imkânı sunar ve senkronize çalışmayı
             destekler. Ortak ağ bağlantısı ile veli, öğrenci ve okul arasındaki ilişkilerde köprü olur.
           </p>
-          <a class="btn btn-primary mr-4 btn-lg js-scroll-trigger" href="#about">Demo Talebi Gönder</a>
-          <a class="btn btn-secondary btn-lg js-scroll-trigger" href="#about">İncele</a>
+          <div>
+            <a class="btn mb-5 btn-primary mr-4 btn-lg js-scroll-trigger" href="#about">Demo Talebi Gönder</a>
+            <a class="btn mb-5 btn-secondary btn-lg js-scroll-trigger" href="#about">İncele</a>
+          </div>
       </div>
     </div>
   </header>
   <!--startPageEnd-->
   <div class="align-items-center justify-content-center text-center">
-    <div style="overflow: hidden;"><img class="headerImage" src="./assets/images/bg.svg" alt="Scoutive Örnek Paneli"></div>
-    <div class="-mt-20"
-    " ><img src="./assets/images/panel.svg" alt="Scoutive Örnek Paneli"></div>
+    <div style="overflow: hidden;"><img class="headerImage" src="./assets/images/bg.svg" alt="Scoutive Örnek Paneli">
+    </div>
+    <div><img class="img-fluid per-80" src="./assets/images/panel.svg" alt="Scoutive Örnek Paneli"></div>
   </div>
   <script src="./assets/js/custom.js"></script>
-</body>
+  <!-- Message Send-->
+  <div class="container sendMessageArea">
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <ul class="contact-icons p-0">
+          <h4>Adresimiz</h4>
+          <p><i class="fa fa-map-marker"></i> Nisbetiye Mah. Gazi Güçnar Sok. Uygur
+            İş Merkezi No: 4 İç Kapı No: 2 Beşiktaş
+            İstanbul / Türkiye
+          </p>
+          <div class="bracket"></div>
+          <h4>İletişim</h4>
+          <label><i class="fa fa-phone"></i> Telefon: <label class="font-weight-bold">0850 800 1234</label></label>
+          <label><i class="fa fa-envelope"></i> Eposta: <label class="font-weight-bold">info@scoutive.net</label></label>
+        </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+      <div class="col-lg-8 col-md-6 col-sm-12">
+        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
+          <!--Grid row-->
+          <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-6">
+              <div class="md-form">
+                <input type="text" id="name" name="name" placeholder="Adınız" class="form-control">
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-6">
+              <div class="md-form">
+                <input type="text" id="email" placeholder="Email Adresiniz" name="email" class="form-control">
+              </div>
+            </div>
+            <!--Grid column-->
+
+          </div>
+          <!--Grid row-->
+
+          <!--Grid row-->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="md-form">
+                <input type="text" id="subject" placeholder="Konu" name="subject" class="form-control">
+              </div>
+            </div>
+          </div>
+          <!--Grid row-->
+
+          <!--Grid row-->
+          <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-12">
+
+              <div class="md-form">
+                <textarea type="text" id="message" placeholder="Mesajınızı Giriniz..." name="message" rows="2"
+                  class="form-control md-textarea"></textarea>
+              </div>
+
+            </div>
+          </div>
+          <!--Grid row-->
+
+        </form>
+
+        <div class="center-on-small-only ml-2">
+          <a class="btn btn-secondary" onclick="document.getElementById('contact-form').submit();">Mesaj Gönder</a>
+        </div>
+        <div class="status"></div>
+      </div>
+      <!--Grid column-->
+
+
+      <!--Grid column-->
+
+    </div>
+
+  </div>
+
+  <!-- Footer Location -->
+  <footer class="footer text-center footerScoutive">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 text-center text-lg-left">
+          <h4 class="mt-4 mb-4 text-white "><img class="scoutive_logo" id="navbar_logo"
+              src="https://scoutive-others.s3.eu-central-1.amazonaws.com/sites/logo_white.svg" alt="Scoutive"></h4>
+          <div class="footerMenu">Why I say old chap that is sping lavatory chip shop gosh off his, smashing boot are you
+            taking the piss posh loo brilliant matie boy
+          </div>
+        </div>
+
+        <!-- Footer Social Icons -->
+        <div class="col-lg-3 col-md-6 text-center text-lg-left"><a class="text-decoration-none" href="#">
+            <h4 class="mt-4 mb-4 text-white ">Scoutive</h4>
+          </a>
+          <div class="navbar-light">
+            <a class="text-decoration-none" href="#">
+              <p class="footerMenu">Biz Kimiz</p>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <p class="footerMenu">Neden Scoutive</p>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <p class="footerMenu">Demo Talebi</p>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <p class="footerMenu">İletişim</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer Social Icons -->
+        <div class="col-lg-3 col-md-6 text-center text-lg-left">
+          <a class="text-decoration-none" href="#">
+            <h4 class="mt-4 mb-4 text-white ">Destek</h4>
+          </a>
+          <div class="navbar-light">
+            <a class="text-decoration-none" href="#">
+              <p class="footerMenu">Yardım Merkezi</p>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <p class="footerMenu">Sıkça Sorulan Sorular</p>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <p class="footerMenu">Kişisel Verilerin Korunması</p>
+            </a>
+          </div>
+        </div>
+        <!-- Footer About Text -->
+        <div class="col-lg-3 col-md-6 text-center text-lg-left">
+          <a class="text-decoration-none" href="#">
+            <h4 class="mt-4 mb-4 text-white">Özellikler</h4>
+          </a>
+          <div class="navbar-light">
+            <p class="footerMenu">Öğrenci Takibi</p>
+            <p class="footerMenu">Personel Takibi</p>
+            <p class="footerMenu">Yoklama Takibi</p>
+            <p class="footerMenu">Cari Hesap Takibi</p>
+            <p class="footerMenu">Gelir/Gider Takibi</p>
+            <p class="footerMenu">Öğrencileri Gruplandırma</p>
+            <p class="footerMenu">Senkronize Çalışma</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Copyright -->
+  <div class="copyright text-center text-white CopyrightScoutive border-t">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-12 text-center text-lg-left pt-3">
+          <div>© 2020 <a class="text-decoration-none text-white CopyrightScoutive" href="#">Scoutive</a>. Tüm hakları
+            saklıdır.</div>
+        </div>
+        <div class="col-lg-2 border-r pt-3">
+          <div>Gizlilik Politikası</div>
+        </div>
+        <div class="col-lg-2 pt-3">
+          <p>Çerez Politikası</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
