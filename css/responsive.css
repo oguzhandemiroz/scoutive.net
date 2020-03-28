@@ -38,6 +38,9 @@
         font-size: 40px;
         margin-bottom: 55px;
     }
+    .saasland_container .saasland_col_content .saasland_content h2 {
+        font-size: 25px;
+    }
 }
 @media (max-width: 1550px){
     .s_features_item .s_features_img img{
@@ -4492,4 +4495,16 @@
         display: none;
     }
     
+}
+
+@media (max-height: 800px) {
+    .saasland_container .saasland_col_content .saasland_content {
+        top: calc(50% - 120px);
+    }
+    .saasland_container .saasland_col_content .saasland_content h2 {
+        font-size: 20px;
+    }
+    .saasland_container .saasland_col_content .saasland_content h1 {
+        font-size: 30px;
+    }
 }
