@@ -1,0 +1,109 @@
+/* ### HEADER ### */
+header.scoutive-header {
+    padding: 1rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    -webkit-transition: 0.6s box-shadow, 0.6s background-color, 0.6s color;
+    transition: 0.6s box-shadow, 0.6s background-color, 0.6s color;
+}
+
+header.scoutive-header.header-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0 1px 9px transparent;
+    box-shadow: 0 1px 9px transparent;
+    color: #343541;
+}
+
+header.scoutive-header .header-logo img {
+    width: 130px;
+}
+
+header.scoutive-header .header-menu-btn {
+    cursor: pointer;
+}
+
+header.scoutive-header .header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    z-index: 3;
+    right: 0;
+    position: absolute;
+    top: 100%;
+    margin-top: 0.5rem;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(18, 74, 138, 0.24);
+    box-shadow: 0 4px 8px 0 rgba(18, 74, 138, 0.24);
+}
+
+header.scoutive-header .header-nav a {
+    margin-left: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+    opacity: 0.75;
+    text-decoration: none;
+}
+
+header.scoutive-header .header-nav a:hover {
+    opacity: 1;
+}
+
+header.scoutive-header.header-fixed .header-nav a {
+    color: #495057;
+}
+
+@media (min-width: 768px) {
+    header.scoutive-header .header-nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        position: relative;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header.scoutive-header .header-nav {
+        background-color: #fff;
+        padding: 0.875rem;
+    }
+
+    header.scoutive-header .header-nav a {
+        padding: 0.5rem;
+        width: 130px;
+        color: #495057;
+        margin-left: 0;
+        font-size: 14px;
+        text-decoration: none;
+    }
+}
+/* ### HEADER ### */
+
+/* ### MAIN INTRO ### */
+.scoutive-intro {
+    background-color: #7dc4f6;
+    width: 100%;
+    height: 100vh;
+    min-height: 680px;
+    max-height: 1390px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* ### MAIN INTRO ### */
