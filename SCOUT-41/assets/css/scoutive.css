@@ -1,6 +1,6 @@
 /* ### HEADER ### */
 header.scoutive-header {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -62,19 +62,160 @@ header.scoutive-header.header-fixed .header-nav a {
     color: #495057;
 }
 
-@media (min-width: 768px) {
-    header.scoutive-header .header-nav {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        position: relative;
-        margin-top: 0;
-    }
+/* ### HEADER ### */
+
+/* ### MAIN INTRO ### */
+.scoutive-intro-bg {
+    background-color: #7dc4f6;
+    width: 100%;
+    height: 100vh;
+    min-height: 680px;
+    max-height: 1390px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.scoutive-intro-bg-wave {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -130px;
+}
+/* ### MAIN INTRO ### */
+#demoButton,
+#reviewButton {
+    width: 200px;
+    max-width: 100%;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin: 0 0.75rem;
 }
 
+.btn.btn-demo {
+    color: #fff;
+    background-color: #4f4e96;
+}
+.btn.btn-demo:hover {
+    background-color: #56559c;
+}
+.btn.btn-white {
+    color: #485057;
+    background-color: #fff;
+}
+.btn.btn-white:hover {
+    background-color: #f3f4f5;
+}
+
+.bg-dirty-white {
+    background-color: #fcfbfd;
+}
+.scoutive-desktop-mockup {
+    width: 100%;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.scoutive-desktop-detail {
+    margin-right: 50px;
+    margin-top: 30px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.scoutive-desktop-detail img {
+    transform: scaleX(-1);
+}
+.coach-app-detail {
+    margin-top: 100px;
+    margin-left: 150px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.coach-app-mockup {
+    position: absolute;
+    left: 100px;
+    top: 105px;
+    width: 100%;
+    z-index: 999;
+    max-width: 357px;
+}
+.partners-wrapper {
+    padding: 7rem 0;
+}
+.partners-wrapper .partner-logo {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    -webkit-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+    filter: grayscale(1);
+}
+.partners-wrapper .partner-logo:hover {
+    filter: grayscale(0);
+}
+
+.mini-features-wrapper {
+    padding-bottom: 5rem;
+}
+.mini-features-wrapper .mini-features-icon-bg {
+    display: inline-block;
+    background: url(../images/mini-features/icon-shape.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 1.5rem;
+}
+.mini-features-wrapper .mini-features-icon-bg > img {
+    width: 60px;
+}
+
+.big-features .big-features-item:nth-child(odd) {
+    flex-direction: row-reverse;
+    margin-top: 1rem;
+}
+.big-features .big-features-item > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ### MEDIA QUERIES ### */
+@media (max-width: 1440px) {
+    .scoutive-intro-bg {
+        height: auto;
+        max-height: 984px;
+        min-height: 984px;
+    }
+    .scoutive-intro-bg-wave {
+        bottom: -70px;
+    }
+}
+@media (max-width: 1200px) {
+    .coach-app-detail {
+        margin-top: 210px;
+    }
+}
+@media (max-width: 960px) {
+    .scoutive-intro-bg {
+        max-height: 768px;
+        min-height: 768px;
+    }
+    .scoutive-intro-bg-wave {
+        bottom: -75px;
+    }
+    .coach-app-mockup,
+    .coach-app-detail {
+        display: none;
+    }
+}
 @media (max-width: 768px) {
     header.scoutive-header .header-nav {
         background-color: #fff;
@@ -89,21 +230,35 @@ header.scoutive-header.header-fixed .header-nav a {
         font-size: 14px;
         text-decoration: none;
     }
+    .scoutive-intro-bg {
+        max-height: 470px;
+        min-height: 470px;
+    }
+    .scoutive-intro-bg-wave {
+        bottom: -25px;
+    }
+    .coach-app-mockup,
+    .coach-app-detail {
+        display: none;
+    }
 }
-/* ### HEADER ### */
-
-/* ### MAIN INTRO ### */
-.scoutive-intro {
-    background-color: #7dc4f6;
-    width: 100%;
-    height: 100vh;
-    min-height: 680px;
-    max-height: 1390px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
+@media (max-width: 576px) {
+    #demoButton,
+    #reviewButton {
+        margin: 0.5rem 0;
+    }
 }
 
-/* ### MAIN INTRO ### */
+@media (min-width: 768px) {
+    header.scoutive-header .header-nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        position: relative;
+        margin-top: 0;
+    }
+}
+/* ### MEDIA QUERIES ### */
