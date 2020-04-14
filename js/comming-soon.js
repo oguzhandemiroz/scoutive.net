@@ -37,7 +37,7 @@
         updateClock();
         var timeinterval = setInterval(updateClock, 1000);
     }
-    var deadline = new Date("2020-04-12 15:00:00");
+    var deadline = new Date("2020-04-24 15:00:00");
     initializeClock("clockdiv", deadline);
     //# sourceURL=pen.js
 })(jQuery);
